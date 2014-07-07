@@ -1,0 +1,15 @@
+.page {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+.box-shadow {
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.breadcrumbs-inner {
+	border-left: 0;
+	border-right: 0;
+}

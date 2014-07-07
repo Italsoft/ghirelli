@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Fiver_CustomWidgets>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Fiver_CustomWidgets>
+    </modules>
+</config>

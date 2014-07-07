@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Fiver_WidgetProductsList>
+            <version>2.2.0</version>
+        </Fiver_WidgetProductsList>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <widgetproductslist>
+                    <file>fiver_widgetproductslist.xml</file>
+                </widgetproductslist>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <models>
+            <widgetproductslist>
+                <class>Fiver_WidgetProductsList_Model</class>
+            </widgetproductslist>
+        </models>
+        <blocks>
+            <widgetproductslist>
+                <class>Fiver_WidgetProductsList_Block</class>
+            </widgetproductslist>
+        </blocks>
+        <helpers>
+            <widgetproductslist>
+                <class>Fiver_WidgetProductsList_Helper</class>
+            </widgetproductslist>
+        </helpers>
+    </global>
+</config>

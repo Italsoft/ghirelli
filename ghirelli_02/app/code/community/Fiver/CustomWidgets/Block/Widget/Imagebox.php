@@ -1,0 +1,5 @@
+<?php
+class Fiver_CustomWidgets_Block_Widget_Imagebox extends Fiver_CustomWidgets_Block_Imagebox implements Mage_Widget_Block_Interface
+{
+
+}

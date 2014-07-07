@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Fiver_RevSlideshow>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Fiver_RevSlideshow>
+	</modules>
+</config>

@@ -1,0 +1,5 @@
+<?php
+class Fiver_CustomWidgets_Block_Widget_Banner extends Fiver_CustomWidgets_Block_Banner implements Mage_Widget_Block_Interface
+{
+
+}

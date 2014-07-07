@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Fiver_Ajaxglobalmessages>
+            <version>1.0.0</version>
+        </Fiver_Ajaxglobalmessages>
+    </modules>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <fiver_ajaxglobalmessages>
+                    <file>ajaxglobalmessages.xml</file>
+                </fiver_ajaxglobalmessages>
+            </updates>
+        </layout>
+    </frontend>
+</config>

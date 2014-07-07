@@ -1,0 +1,5 @@
+<div style="background: <?php echo $this->getBackgroundColor()?> url('<?php echo $this->getImageUrl() ?>') no-repeat; color: #fff; padding: <?php echo $this->getPaddingTop()?>px 0;" class="fiver-imagebox-widget">
+<div class="container">
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($this->getBlockId())->toHtml();?>
+</div>
+</div>

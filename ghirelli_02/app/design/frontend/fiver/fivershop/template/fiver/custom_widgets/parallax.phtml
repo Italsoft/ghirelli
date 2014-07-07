@@ -1,0 +1,5 @@
+<div class="parallax-box" style="background-image:url(<?php echo $this->getImageUrl() ?>); height:<?php echo $this->getBoxHeight() ?>px">
+<p style="text-align: center;">
+	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($this->getBlockId())->toHtml();?>
+</p>
+</div>

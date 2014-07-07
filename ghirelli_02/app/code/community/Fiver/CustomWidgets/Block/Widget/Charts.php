@@ -1,0 +1,5 @@
+<?php
+class Fiver_CustomWidgets_Block_Widget_Charts extends Fiver_CustomWidgets_Block_Charts implements Mage_Widget_Block_Interface
+{
+
+}
