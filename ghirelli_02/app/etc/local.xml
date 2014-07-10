@@ -40,10 +40,10 @@
             </db>
             <default_setup>
                 <connection>
-                    <host><![CDATA[194.69.193.244]]></host>
-                    <username><![CDATA[c2ghirelli_user]]></username>
-                    <password><![CDATA[Ita1234ghirelli]]></password>
-                    <dbname><![CDATA[c2ghirelli]]></dbname>
+                    <host><![CDATA[localhost]]></host>
+                    <username><![CDATA[ghirelli]]></username>
+                    <password><![CDATA[ghirelli]]></password>
+                    <dbname><![CDATA[ghirelli_02]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
