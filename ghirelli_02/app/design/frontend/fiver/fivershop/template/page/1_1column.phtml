@@ -69,7 +69,7 @@ if($preset==1) {
 ?>
 <?php echo $_imgHtml ?>
 	<div class="header-content-title<?php if($_imgHtml): echo "-absolute"; endif?>">
-    <h1><?php echo $this->htmlEscape($_category->getName()) ?></h1>
+    <h1 style="visibility: hidden"><?php echo $this->htmlEscape($_category->getName()) ?></h1>
     <? if($_category->getDescription()):?>
     <div class="line margin-bottom-15px"></div>
     <h3>
