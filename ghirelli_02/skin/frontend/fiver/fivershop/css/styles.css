@@ -234,7 +234,6 @@ ul,ol         { list-style:none; }
 .breadcrumbs-container {
     position: absolute;
     bottom: -1px;
-    bottom: -1px;
     width: 100%
 }
 .breadcrumbs-inner {

@@ -61,29 +61,28 @@ if($preset==1) {
         }
 
     ?>
-<?php echo $_imgHtml ?>
-	<div class="header-content-title<?php if($_imgHtml): echo "-absolute"; endif?>">
-    <h1 style="visibility: hidden"><?php echo $this->htmlEscape($_category->getName()) ?></h1>
-    <? if($_category->getDescription()):?>
-    <div class="line margin-bottom-15px"></div>
-    <h3>
-	     <?php echo $_category->getDescription() ?>
-    </h3>
-    <?php endif;?>
+    <?php echo $_imgHtml ?>
+    <div class="header-content-title<?php if($_imgHtml): echo "-absolute"; endif?>">
+        <h1 style="visibility: hidden"><?php echo $this->htmlEscape($_category->getName()) ?></h1>
+        <? if($_category->getDescription()):?>
+            <div class="line margin-bottom-15px"></div>
+            <h3>
+	            <?php echo $_category->getDescription() ?>
+            </h3>
+        <?php endif;?>
     </div>
-<?php endif;?>
- <?php /*echo $this->getChildHtml('breadcrumbs')*/ ?>
-  	
+    <?php endif;?>
+    <?php /* echo $this->getChildHtml('breadcrumbs')*/ ?>
 </div>
 
         <!--<div class="fiver-main-content">
             <div class="main container">
             	<div class="row columns-layout">
 	                <div class="col-main col-sm-9 col-sm-push-3">
-	                    <?php echo $this->getChildHtml('global_messages') ?>
-	                    <?php echo $this->getChildHtml('content') ?>
+	                    <?php /*echo $this->getChildHtml('global_messages')*/ ?>
+	                    <?php /*echo $this->getChildHtml('content')*/ ?>
 	                </div>
-	                <div class="col-left sidebar col-sm-3 col-sm-pull-9"><?php echo $this->getChildHtml('left') ?></div>
+	                <div class="col-left sidebar col-sm-3 col-sm-pull-9"><?php /*echo $this->getChildHtml('left')*/ ?></div>
 
                 </div>
                 </div>
