@@ -15,7 +15,7 @@
 .fiver-navigation #fiver-nav {
     height: 50px;
     padding: 0;
-    z-index: 997; */
+    z-index: 997;
 }
 .header-container-1 .fiver-navigation #fiver-nav {
     display: block;
@@ -86,7 +86,7 @@
 }
 #fiver-nav li.active a.level-top,
 #fiver-nav li:hover a.level-top {
-    background-color: none;
+    /*background-color: none;*/
     color: #363636;
 }
 #fiver-nav li.active a {
@@ -253,8 +253,9 @@ div.shown-sub {
     left: -10000px;
     position: absolute;
     top: 49px;
-    background-color: #ffffff;
+    background-color: #fff;
     width: 100%;
+    opacity: 0.8 !important;
 }
 #fiver-nav li.level0 ul li {
     height: auto;

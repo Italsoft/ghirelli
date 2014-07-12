@@ -233,7 +233,7 @@ ul,ol         { list-style:none; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
 .breadcrumbs-container {
     position: absolute;
-    bottom: -1px;
+    /*bottom: -1px;*/
     width: 100%
 }
 .breadcrumbs-inner {
@@ -241,7 +241,7 @@ ul,ol         { list-style:none; }
 	padding-bottom: 12px;
     padding-top: 12px;
     border: #ddd solid 1px;
-    margin: 0 auto;
+    margin: 50px auto;
     border-bottom: 0;
 }
 
