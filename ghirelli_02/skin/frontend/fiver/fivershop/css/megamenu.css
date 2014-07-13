@@ -86,7 +86,7 @@
 }
 #fiver-nav li.active a.level-top,
 #fiver-nav li:hover a.level-top {
-    /*background-color: none;*/
+    background-color: transparent;
     color: #363636;
 }
 #fiver-nav li.active a {
@@ -524,10 +524,10 @@ div.shown-sub {
 
 /* Menu */
 .navbar{border:none; text-align: left;}
-.navbar-inverse{background-color:#fff !important; border-color:none !important;}
+.navbar-inverse{background-color:#fff !important; border-color:transparent !important;}
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{ border: medium none;}
 .bs-navbar-collapse .nav-accordion{background-color:#F2F2F2 !important;border-top: 1px solid #FFFFFF;margin-top: 1px;}
-.navbar-inverse .bs-navbar-collapse ul.nav-accordion li a{color:##333333;padding-left: 10px;margin-bottom: 1px; text-transform: uppercase;font-size:14px;}
+.navbar-inverse .bs-navbar-collapse ul.nav-accordion li a{color:#333333;padding-left: 10px;margin-bottom: 1px; text-transform: uppercase;font-size:14px;}
 .navbar-inverse .bs-navbar-collapse ul.nav-accordion li a:hover{color:#fff;}
 .navbar-inverse .bs-navbar-collapse ul.nav-accordion li{ line-height: 49px;}
 .navbar-inverse .bs-navbar-collapse ul.nav-accordion li a{ border-bottom: 1px solid #FFFFFF;}
@@ -549,7 +549,7 @@ div.shown-sub {
 .navbar-inverse .navbar-toggle:focus{ background-color: #FFF !important; }
 .navbar-inverse .navbar-toggle:hover{ background-color:#FFF !important;}
 .navbar-header {
-    background-color: none !important;
+    background-color: transparent !important;
     background-image: none !important;
     border: 0 none !important;
     border-radius: 0 0 0 0 !important;

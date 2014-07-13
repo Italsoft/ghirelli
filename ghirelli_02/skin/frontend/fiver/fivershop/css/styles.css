@@ -751,7 +751,20 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .alert-box h6 {margin:0 0 20px 0; padding:20px; border-bottom:1px solid #e9e9e9; font-size:14px; font-weight:bold;}
 .alert-box h6 small {display:block; text-transform:uppercase; font-size:11px; font-weight:normal; color:#666; padding:5px 0 0 0;}
 .alert-box .content {padding:0 20px;}
-/* Pager */
+
+/* posizionamento dei prodotti */
+.subcat-products {
+    float: left;
+    width: 300px;
+    margin: 0 6px 10px 6px;
+}
+
+.subcat-products img {
+    display: block;
+    border: 2px solid #333300;
+ }
+
+ /* Pager */
 .pager li > a, .pager li > span {
 	border: 0;
 	-webkit-border-radius: 0;
@@ -2021,7 +2034,7 @@ tr.summary-details-excluded { font-style:italic; }
 	line-height: 37px;
 	font-size: 21px;
 	color: #FFFFFF;
-	padding-right: 3.5px;
+	padding-right: 3px;
 }
 .top-header .mini-cart .cart_circle:hover i {
 
@@ -2141,7 +2154,7 @@ tr.summary-details-excluded { font-style:italic; }
 .nav-custom-link { float: right !important; }
 .menu-logo { opacity: 0; margin-left: -181px; line-height: 57px; }
 .menu-logo img { vertical-align: middle; margin: 0; }
-.menu-logo a:hover{background-color:none; }
+.menu-logo a:hover{background-color:transparent; }
 /********** < Head Content */
 #banner-slider {
 	margin-bottom: 10px;
@@ -2341,7 +2354,7 @@ tr.summary-details-excluded { font-style:italic; }
 }
 
 .main-container .breadcrumbs-container .breadcrumbs, 
-.main-container breadcrumbs-container .breadcrumbs ul,
+.main-container .breadcrumbs-container .breadcrumbs ul,
 .main-container .breadcrumbs-container .breadcrumbs ul li {
 	line-height: 30px !important;
 	padding: 0;
@@ -2645,7 +2658,7 @@ a.compare span {
 
 }
 .shopping-cart:hover .cart_circle {
-    background-color: none !important;
+    background-color: transparent !important;
 }
 /* Slider Nav */
 a.slider-arrows {
@@ -3104,7 +3117,7 @@ a.fiver-button-light  {
 	text-decoration: none;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
-	-moz-background-clip: padding;
+	-moz-background-clip: padding-box;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	vertical-align: middle;
@@ -5708,7 +5721,7 @@ font: 20px/20px 'BebasRegular',Helvetica,sans-serif;
     color: #FFFFFF;
     font-size: 14px;
     height: 20px;
-    left: 1.3px;
+    left: 3px;
     margin: 0;
     position: absolute;
     width: 20px;
@@ -6022,7 +6035,7 @@ h2.resp-tab-active {
         border: none;
         float: none;
         width: 100%;
-        min-height: initial;
+        min-height: inherit:
         clear: none;
     }
     .resp-accordion-closed {
@@ -6994,7 +7007,7 @@ p.required {
 
 .product-shop .product-name h1 {
 	font-size: 22px;
-	font-weight : Regular;
+	font-weight : normal;
 	text-transform : capitalize;
     padding-bottom: 15px;
 }
@@ -7558,7 +7571,7 @@ p.required {
    -moz-box-shadow: 0 0 1px #000;
    box-shadow: 0 0 1px #000;
 }
-.view a.info: hover {
+.view a.info:hover {
    -webkit-box-shadow: 0 0 5px #000;
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
