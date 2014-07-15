@@ -62,7 +62,7 @@ $code = $tmhOAuth->request('GET', $tmhOAuth->url('1.1/statuses/user_timeline'), 
 	<div class="block-home-callout-container">
 		<div class="container">
 			<div class="block-home-callout">
-				<?php echo $block_home_callout;?>
+				<?php /*echo $block_home_callout; */?>
 			</div>
 		</div>
 	</div>
@@ -72,7 +72,7 @@ $code = $tmhOAuth->request('GET', $tmhOAuth->url('1.1/statuses/user_timeline'), 
 	<div class="cool-background-box border-box-shadow">
 	<div class="container">
 		<div class="row products-list-4-col">
-			<?php echo $block_products_list_4_columns ?>	
+			<?php /*echo $block_products_list_4_columns*/ ?>
 		</div>
 	</div>
 	</div>
@@ -103,17 +103,18 @@ $code = $tmhOAuth->request('GET', $tmhOAuth->url('1.1/statuses/user_timeline'), 
 		</div>
 	</div>
 	<?php endif;?>
-<!--<div class="footer-bg"> -->
-	<!-- <div class="footer-container"> -->
-	<!-- <div class="container"> -->
-	<!--Ghirelli -->
-		<div class="footer-aditional row">
-				<!--<div class="column col-xs-12 col-sm-12 col-lg-6 col-md-6">
+<!--<div class="footer-bg">  non è definito nel css-->
+<div>
+	<div class="footer-container">
+	    <div class="container">
+	    <!--Ghirelli -->
+		    <div class="footer-aditional row">
+				<div class="column col-xs-12 col-sm-12 col-lg-6 col-md-6">
 			    	<?php /*if ($aditional_footer_menu = $this->getLayout()->createBlock('cms/block')->setBlockId('aditional_footer_menu')->toHtml()): */ ?>
 				    	<?php /* echo $aditional_footer_menu; */ ?>
 				    <?php /* endif; */?>
-				    			
-				</div>-->
+				    dddddd
+				</div>
 				
 				<!--<div class="twitter col-lg-3 col-sm-6 col-md-3">
                     <?php /* if($twitter_account && $consumer_key && $consumer_secret && $user_token && $user_secret): */?>
@@ -178,11 +179,11 @@ $code = $tmhOAuth->request('GET', $tmhOAuth->url('1.1/statuses/user_timeline'), 
                         </div>
                     <?php /* endif */?>
 				</div> -->
-		<!-- </div> -->
-	<!-- </div> -->
-	<!--Ghirelli-->
-	<!-- </div> -->
-<!-- </div> -->
+		    </div>
+	    </div>
+	    <!--Ghirelli-->
+	</div>
+</div>
 <div class="copyright-footer">
 	<div class="container">
 	<div class="footer">
@@ -194,10 +195,12 @@ $code = $tmhOAuth->request('GET', $tmhOAuth->url('1.1/statuses/user_timeline'), 
 				<?php echo $this->getChildHtml('footer_links') ?>
 		    	<?php echo $this->getChildHtml('cms_footer_links') ?>
 			</div>
-			<div class="footer-copyright-left col-xs-12 col-sm-12 col-md-4 newsletter">		    		
+			<div class="footer-copyright-left col-xs-12 col-sm-12 col-md-4 newsletter">
 				<?php echo $this->getChildHtml('newsletter') ?>
-	    	</div> 	
-			
+	    	</div>
+            <div class="footer-copyrights-left col-xs-12 col-sm-12 col-md-4 newsletter" style="color: white; float: right; display: block; clear: both">
+                facebook prova
+	    	</div>
 	    </div>
     </div>
 	</div>
