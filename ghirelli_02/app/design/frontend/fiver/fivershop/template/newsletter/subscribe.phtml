@@ -26,18 +26,20 @@
 ?>
 <form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-validate-detail">
     <div class="form-subscribe">
-        <div class="form-subscribe-header" style = "padding-left: 190px">
+        <div class="form-subscribe-header" style="padding-left: 50px">
             <label for="newsletter"><?php echo $this->__('SIGN UP FOR NEWSLETTER') ?></label>
         </div>
         <div class="input-box">
-           <input type="text" name="email" id="newsletter" title="<?php echo $this->__('Enter email address') ?>" class="input-text required-entry validate-email" />
-           <button type="submit" title="<?php echo $this->__('Submit') ?>" class="button"><span><span><i class="icon-right-open-big"></i></span></span></button>
+            <input type="text" name="email" id="newsletter" title="<?php echo $this->__('Enter email address') ?>"
+                   class="input-text required-entry validate-email"/>
+            <button type="submit" title="<?php echo $this->__('Submit') ?>" class="button"><span><span><i
+                            class="icon-right-open-big"></i></span></span></button>
         </div>
     </div>
 </form>
 <script type="text/javascript">
-//<![CDATA[
+    //<![CDATA[
     var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
     new Varien.searchForm('newsletter-validate-detail', 'newsletter', '<?php echo $this->helper('newsletter')->__('Enter your email address') ?>');
-//]]>
+    //]]>
 </script>
