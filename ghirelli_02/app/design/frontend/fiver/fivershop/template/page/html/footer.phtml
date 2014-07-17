@@ -190,36 +190,43 @@ $code = $tmhOAuth->request('GET', $tmhOAuth->url('1.1/statuses/user_timeline'), 
 	    	<div class="footer-copyright-right col-xs-12 col-sm-12 col-md-1" style = "width: 10%">
 				<address><?php echo $this->getCopyright() ?></address>
 	    	</div>
+            <!--<div class="col-xs-12 footer-copyright"   >
+				<address><?php /*echo $this->getCopyright() */?></address>
+	    	</div>-->
 			<div class="footer-copyright-left col-xs-12 col-sm-12 col-md-3 cms_footer_links" >
 				<?php echo $this->getChildHtml('footer_links') ?>
 		    	<?php  echo $this->getChildHtml('cms_footer_links') ?>
 			</div>
+            <!--<div class="col-xs-12 col-sm-12 col-md-3 cms_footer_links">
+				<?php /*echo $this->getChildHtml('footer_links') */?>
+		    	<?php /*echo $this->getChildHtml('cms_footer_links') */?>
+			</div>-->
             <div class="footer-copyright-right col-xs-12 col-sm-12 col-md-4 newsletter" >
 				<?php echo $this->getChildHtml('newsletter') ?>
 	    	</div>
             <div class="footer-social">
-                <ul>
-                    <li>
-                        <a href="http://www.facebook.it" target="_blank" >
-                            <img src="/media/social/FACEBOOK.png" style="height: 20px;margin: 0 0 0 0 " />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.twitter.it" target="_blank" >
-                            <img src="/media/social/TWITTER.png" style="height: 20px; margin: 0 0 0 0" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com" target="_blank" >
-                            <img src="/media/social/GOOGLE_PLUS.png" style="height: 20px; margin: 0 0 0 0" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://it.pinterest.com/" target="_blank" >
-                            <img src="/media/social/PINTEREST.png" style="height: 20px; margin: 0 0 0 0" />
-                        </a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.it" target="_blank" >
+                                <img src="/media/social/FACEBOOK.png" style="height: 20px;margin: 0 0 0 0 " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.it" target="_blank" >
+                                <img src="/media/social/TWITTER.png" style="height: 20px; margin: 0 0 0 0" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com" target="_blank" >
+                                <img src="/media/social/GOOGLE_PLUS.png" style="height: 20px; margin: 0 0 0 0" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://it.pinterest.com/" target="_blank" >
+                                <img src="/media/social/PINTEREST.png" style="height: 20px; margin: 0 0 0 0" />
+                            </a>
+                        </li>
+                    </ul>
             </div>
 	    </div>
     </div>

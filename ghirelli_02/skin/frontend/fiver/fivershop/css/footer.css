@@ -1,7 +1,6 @@
 .cms_footer_links , .cms_footer_links  ul{float: left;}
 .newsletter {
     width: 55%;
-    /*float: right;*/
 }
 
 .footer-social{
@@ -16,3 +15,9 @@
     padding: 0 0 0 0;
     height: 20px;
 }
+
+/*
+.footer-copyright{
+    width: 150px;
+}
+*/
