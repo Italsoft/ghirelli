@@ -85,11 +85,26 @@
     outline: none;
 }
 #fiver-nav li.active a.level-top,
-#fiver-nav li:hover a.level-top {
+#fiver-nav li:hover a.level-top{
     background-color: transparent;
-    color: #b98f00; /*color: #363636;*/
+    color: #FFD700; /*color: #363636;*/
     font-weight: bold;
 }
+
+/* aggiunta per assegnare colore dorato in hover sul menu
+  vedi mainmenu/top.phtml*/
+.level-top:hover{
+    background-color: transparent !important;
+    color: #FFD700  !important;
+    font-weight: bold !important;
+}
+
+#fiver-nav li:hover a.level-top{
+    background-color: transparent;
+    color: #FFD700;
+    font-weight: bold;
+}
+
 #fiver-nav li.active a {
     color: #72AEBD;
 }
