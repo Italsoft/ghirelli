@@ -1,7 +1,7 @@
 <layout version="0.1.0">
 <default>
 	<reference name="head">
-            <action method="addCss"><script>css/footer.css</script></action>
+        <action method="addCss"><script>css/footer.css</script></action>
 	</reference>
 </default>
 </layout>

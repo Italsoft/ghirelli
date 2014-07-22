@@ -87,7 +87,8 @@
 #fiver-nav li.active a.level-top,
 #fiver-nav li:hover a.level-top {
     background-color: transparent;
-    color: #363636;
+    color: #b98f00; /*color: #363636;*/
+    font-weight: bold;
 }
 #fiver-nav li.active a {
     color: #72AEBD;
