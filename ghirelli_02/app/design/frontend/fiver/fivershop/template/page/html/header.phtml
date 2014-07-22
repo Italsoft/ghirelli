@@ -63,11 +63,11 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
         }else{
             $custom_header = Mage::getStoreConfig('themeoptions_general/general_options/custom_header', $storeId);
         }
-        if($custom_header) {
+        /*if($custom_header) {
             include_once('headers/'.$custom_header.'.phtml');
-        }else{
+        }else*/
             include_once('headers/default.phtml');
-        }
+        /*}*/
         ?>
     </div>
 

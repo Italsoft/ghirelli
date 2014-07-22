@@ -49,11 +49,11 @@
     text-align: left;
 }
 #fiver-nav li.last { background: none;}
-#fiver-nav a, #fiver-nav a:hover {
+/*#fiver-nav a, #fiver-nav a:hover {
     display: block;
     outline: none;
     text-decoration: none;
-}
+}*/
 
 #fiver-nav a {
     display: block;

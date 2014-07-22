@@ -1650,7 +1650,9 @@ tr.summary-details-excluded { font-style:italic; }
 /* Top Header ================================================================================ */
 .top-header-container {
     background-color: #fff;
+    opacity: 0.7;
 }
+
 .top-header-container-2 {
     background-color: #676634;
 }
@@ -2142,8 +2144,9 @@ tr.summary-details-excluded { font-style:italic; }
 	background: #000; /*background: #fff;*/
 	max-width: 1170px;
 	width: 100%;
-	margin: 48px auto;
+	/*margin: 48px auto;*/
 }
+
 .slicknav_menu {
 	display:none;
 }
