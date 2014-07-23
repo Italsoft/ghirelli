@@ -241,7 +241,7 @@ ul,ol         { list-style:none; }
 	padding-bottom: 12px;
     padding-top: 12px;
     border: #ddd solid 1px;
-    margin: 50px auto;
+    margin: 0 auto;
     border-bottom: 0;
 }
 
@@ -3950,7 +3950,7 @@ transition:transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
 
 .product-view {}
 
-.product-essential { margin-bottom: 20px; }
+.product-essential { margin-bottom: 20px; margin-top: 175px }
 .product-essential h2 { }
 
 .product-collateral {padding:25px 0; }

@@ -105,9 +105,15 @@
     font-weight: bold;
 }
 
+#fiver-nav li.active a.level-top {
+    color: #FFD700 !important;
+}
+
+
 #fiver-nav li.active a {
     color: #72AEBD;
 }
+
 #fiver-nav a, #megamenu a, #fiver-nav li.level0 a {
     color: #FFFFFF; /*color: #363636*/
     position: relative;

@@ -68,7 +68,7 @@ if($get_height) {
         	<div class="row">
             	<div class="col-md-7">
 		            <div class="product-name">
-		                <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+		                <h1 style="visibility: hidden"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
 		            </div>
             
 					<?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
@@ -118,17 +118,15 @@ if($get_height) {
 				        <?php endif;?>
 				</div>
 			    <div class="col-md-5">
-						<div class="fiver-social-share">
-							<ul>
-								
-								<li class="pinterest"><a href="//pinterest.com/pin/create/button/?url=<?php echo $currentUrl = Mage::helper('core/url')->getCurrentUrl(); ?>&amp;media=<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($thumb_width,$thumb_height); ?>&amp;description=<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>" target="_blank" title="<?php echo $this->__('Pin on Pinterest')?>"><i class="icon-pinterest-3"></i></a></li>
-								<li class="mail"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>" title="<?php echo $this->__('Email to a Friend') ?>"><i class="icon-mail"></i></a></li>
-								<li class="twitter"><a href="https://twitter.com/share?url=<?php echo $currentUrl = Mage::helper('core/url')->getCurrentUrl(); ?>" target="_blank" title="<?php echo $this->__('Share on Twitter')?>"><i class="icon-twitter"></i></a></li>
-
-								<li class="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php echo $currentUrl = Mage::helper('core/url')->getCurrentUrl(); ?>&amp;images=<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($thumb_width,$thumb_height); ?>" target="_blank" title="<?php echo $this->__('Share on Facebook')?>"><i class="icon-facebook-4"></i></a></li>
-
-							</ul>
-						</div>
+                    <!-- commentato questo codice per togliere la visualizzazione dei link social -->
+					<!--<div class="fiver-social-share">
+						<ul>
+							<li class="pinterest"><a href="//pinterest.com/pin/create/button/?url=<?php /*echo $currentUrl = Mage::helper('core/url')->getCurrentUrl(); */?>&amp;media=<?php /*echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($thumb_width,$thumb_height); */?>&amp;description=<?php /*echo $_helper->productAttribute($_product, $_product->getName(), 'name') */?>" target="_blank" title="<?php /*echo $this->__('Pin on Pinterest')*/?>"><i class="icon-pinterest-3"></i></a></li>
+							<li class="mail"><a href="<?php /*echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) */?>" title="<?php /*echo $this->__('Email to a Friend') */?>"><i class="icon-mail"></i></a></li>
+							<li class="twitter"><a href="https://twitter.com/share?url=<?php /*echo $currentUrl = Mage::helper('core/url')->getCurrentUrl(); */?>" target="_blank" title="<?php /*echo $this->__('Share on Twitter')*/?>"><i class="icon-twitter"></i></a></li>
+							<li class="facebook"><a href="http://www.facebook.com/sharer.php?u=<?php /*echo $currentUrl = Mage::helper('core/url')->getCurrentUrl(); */?>&amp;images=<?php /*echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($thumb_width,$thumb_height); */?>" target="_blank" title="<?php /*echo $this->__('Share on Facebook')*/?>"><i class="icon-facebook-4"></i></a></li>
+						</ul>
+					</div>-->
 			    	<?php if ($block_detail_right_1 = $this->getLayout()->createBlock('cms/block')->setBlockId('block_detail_right_1')->toHtml()): ?>
 					<div class="block_detail_right">
 						<?php echo $block_detail_right_1;?>
