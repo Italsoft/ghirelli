@@ -8,7 +8,8 @@
                 <?php $cur_category = Mage::getModel('catalog/category')->load($_category->getId()); ?>
                 <?php $layer = Mage::getSingleton('catalog/layer'); ?>
                 <?php $layer->setCurrentCategory($cur_category); ?>
-                <? if ($_imageUrl = $this->getCurrentCategory()->getImageUrl()): ?>
+                <? if ($_imageUrl = Mage::getBaseUrl('media').'catalog/category/'.$this->getCurrentCategory()->getThumbnail()): ?>
+                <?/* if ($_imageUrl = $this->getCurrentCategory()->getImageUrl()): */?>
                     <li class="subcat-products">
                     <a href="<?php echo $this->getCategoryUrl($_category) ?>"
                        title="<?php echo $this->htmlEscape($_category->getName()) ?>"/>
