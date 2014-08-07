@@ -755,7 +755,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 /* posizionamento dei prodotti */
 .subcat-products {
     float: left;
-    width: 300px;
+    width: 406px; /*precedente width: 300px;*/
     margin: 0 6px 10px 6px;
 }
 
