@@ -1,11 +1,11 @@
-body, .custom-html .block-content p, .my-account .welcome-msg {
+*/body, .custom-html .block-content p, .my-account .welcome-msg {
   color:#363636;
   font-family:'Lato', sans-serif !important;
   font-size:12px;
 }
 a, a:focus { color:#363636; }
 a:hover {
-  color:#ef5c47 !important;
+  color:#FFD700 !important; /*color:#ef5c47 !important;*/
   text-decoration:none;
 }
 .wrapper { background-color:#ffffff; }

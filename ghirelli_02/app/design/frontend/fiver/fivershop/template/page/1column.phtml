@@ -28,19 +28,17 @@
 /**
  * Template for Mage_Page_Block_Html
  */
- $storeId = Mage::app()->getStore()->getStoreId();
  $box_shadow		=	Mage::getStoreConfig('themeoptions_theming/design_layout/box_shadow', $storeId); 
  $preset = Mage::getStoreConfig('themeoptions_theming/theme_body/presets', $storeId);
 $routeName = Mage::app()->getRequest()->getRouteName();  
 $controller = Mage::app()->getRequest()->getControllerName();
-$action = Mage::app()->getRequest()->getActionName();
 
-$identifier = Mage::getSingleton('cms/page')->getIdentifier();  
 if($preset==1) {
 	$background_image 		= Mage::getStoreConfig('themeoptions_theming/theme_presets/l_background_image', $storeId);
 }else{
 	$background_image 		= Mage::getStoreConfig('themeoptions_theming/theme_presets/d_background_image', $storeId);
-}
+} 
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
@@ -55,7 +53,6 @@ if($preset==1) {
     <div class="page<?php if($box_shadow): echo" box-shadow"; endif?><?php if(!$background_image): echo" no-background"; endif?>">
         <?php echo $this->getChildHtml('header') ?>
         <div class="main-container col1-layout home-content-container">
- 
 <div class="header-background-default">
 <?php if(Mage::registry('current_category')):
  $_helper    = $this->helper('catalog/output');
@@ -67,9 +64,9 @@ if($preset==1) {
     }
  
 ?>
-<l?php echo $_imgHtml ?>
+<?php echo $_imgHtml ?>
 	<div class="header-content-title<?php if($_imgHtml): echo "-absolute"; endif?>">
-    <h1 style="visibility:hidden"><?php echo $this->htmlEscape($_category->getName()) ?></h1>
+    <h1 style="visibility: hidden"><?php echo $this->htmlEscape($_category->getName()) ?></h1>
     <? if($_category->getDescription()):?>
     <div class="line margin-bottom-15px"></div>
     <h3>
@@ -81,23 +78,23 @@ if($preset==1) {
     <?php if($routeName == 'checkout' && $controller == 'cart'){ ?>
 	  <div class="header-content-title title-no-breadcrumbs"><h1><?php echo $this->__('Shopping Cart') ?></h1></div>
 	 <?php  } ?>
-    <?php if($routeName == 'checkout' && $controller == 'checkout'){ ?>
+    <?php if($routeName == 'checkout' && $controller == 'onepage'){ ?>
 	  <div class="header-content-title title-no-breadcrumbs"><h1><?php echo $this->__('Checkout') ?></h1></div>
 	 <?php  } ?>
- <?php echo $this->getChildHtml('breadcrumbs') ?>	        	
+ <?php echo $this->getChildHtml('breadcrumbs') ?>
+  	
 </div>
-
-
-        <div class="fiver-main-content">      	
-            <div class="main home-content container">
+<div class="fiver-main-content">  
+            <div class="main container">
 				<div class="row columns-layout">
-                    <div class="col-main col-md-12">
+	             	<div class="col-main col-md-9">
                         <?php echo $this->getChildHtml('global_messages') ?>
                         <?php echo $this->getChildHtml('content') ?>
                     </div>
-            	</div>
+                	
+	        	</div>                  
             </div>
-        </div>
+</div>
         </div>
         <?php echo $this->getChildHtml('footer') ?>
         <?php echo $this->getChildHtml('before_body_end') ?>

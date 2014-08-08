@@ -269,6 +269,7 @@ div.shown-sub {
     outline: none;
     width: 100%;
     z-index: 9;
+    height: 60px !important;
 }
 #fiver-nav .sub-wrapper {
     display: none;
