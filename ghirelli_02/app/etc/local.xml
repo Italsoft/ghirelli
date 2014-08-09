@@ -38,12 +38,25 @@
             <db>
                 <table_prefix><![CDATA[mg_]]></table_prefix>
             </db>
-            <default_setup>
+            <!--<default_setup>
                 <connection>
                     <host><![CDATA[localhost]]></host>
                     <username><![CDATA[ghirelli]]></username>
                     <password><![CDATA[ghirelli]]></password>
                     <dbname><![CDATA[ghirelli_02]]></dbname>
+                    <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
+                    <model><![CDATA[mysql4]]></model>
+                    <type><![CDATA[pdo_mysql]]></type>
+                    <pdoType><![CDATA[]]></pdoType>
+                    <active>1</active>
+                </connection>
+            </default_setup>-->
+            <default_setup>
+                <connection>
+                    <host><![CDATA[localhost]]></host>
+                    <username><![CDATA[c2ghirelli_user]]></username>
+                    <password><![CDATA[Ita1234ghirelli]]></password>
+                    <dbname><![CDATA[c2ghirellidb]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
