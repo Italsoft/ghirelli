@@ -55,6 +55,12 @@
                     <layout_handle>page_one_column</layout_handle>
                     <is_default>1</is_default>
                 </one_column>
+                <savoir_faire module="page" translate="label">
+                    <label>savoir faire</label>
+                    <template>page/savoirfaire.phtml</template>
+                    <layout_handle>page_savoir_faire</layout_handle>
+                    <is_default>1</is_default>
+                </savoir_faire>
                 <two_columns_left module="page" translate="label">
                     <label>2 columns with left bar</label>
                     <template>page/2columns-left.phtml</template>
