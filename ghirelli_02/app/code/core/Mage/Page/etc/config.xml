@@ -61,6 +61,30 @@
                     <layout_handle>page_savoir_faire</layout_handle>
                     <is_default>1</is_default>
                 </savoir_faire>
+                <la_maison module="page" translate="label">
+                    <label>la maison</label>
+                    <template>page/lamaison.phtml</template>
+                    <layout_handle>page_la_maison</layout_handle>
+                    <is_default>1</is_default>
+                </la_maison>
+                <lo_stile module="page" translate="label">
+                    <label>lo stile</label>
+                    <template>page/lostile.phtml</template>
+                    <layout_handle>page_lo_stile</layout_handle>
+                    <is_default>1</is_default>
+                </lo_stile>
+                <chi_siamo module="page" translate="label">
+                    <label>chi siamo</label>
+                    <template>page/chisiamo.phtml</template>
+                    <layout_handle>page_chi_siamo</layout_handle>
+                    <is_default>1</is_default>
+                </chi_siamo>
+                <dove_siamo module="page" translate="label">
+                    <label>dove siamo</label>
+                    <template>page/dovesiamo.phtml</template>
+                    <layout_handle>page_dove_siamo</layout_handle>
+                    <is_default>1</is_default>
+                </dove_siamo>_siamo>
                 <two_columns_left module="page" translate="label">
                     <label>2 columns with left bar</label>
                     <template>page/2columns-left.phtml</template>

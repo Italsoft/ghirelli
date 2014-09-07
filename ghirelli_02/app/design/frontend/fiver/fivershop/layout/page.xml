@@ -360,6 +360,57 @@
         </reference>
     </page_savoir_faire>
 
+    <page_la_maison translate="label">
+        <label>Pagina statica a una colonna</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/lamaison.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_la_maison>
+
+    <page_lo_stile translate="label">
+        <label>Pagina statica a una colonna</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/lostile.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_lo_stile>
+
+    <page_chi_siamo translate="label">
+        <label>Pagina statica a una colonna</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/chisiamo.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_chi_siamo>
+
+    <page_dove_siamo translate="label">
+        <label>Pagina statica a una colonna</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/dovesiamo.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_dove_siamo>
 
     <page_two_columns_left translate="label">
         <label>All Two-Column Layout Pages (Left Column)</label>
