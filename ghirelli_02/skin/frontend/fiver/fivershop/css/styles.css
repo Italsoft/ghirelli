@@ -764,6 +764,48 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
     border: 2px solid #333300;
  }
 
+.subcat-products img:hover {
+    opacity: 0.3;
+}
+
+/* gestione della visualizzazione del messaggio si descrizione
+su hover del mouse (cambio colore, semitrasparenza e messaggio in evidenza*/
+.subcat-products-description{
+    height: 220px;
+    background-repeat: no-repeat;
+    border: 2px solid #333300;
+    background-color: #000;
+}
+
+
+ .description-container{
+     width: 406px;
+     height: 220px;
+     background-color: #000;
+     opacity: 0;
+ }
+
+ /* l'altezza è la stessa sel container e del subcat-products-description
+ che è anche larghezza e altezza dell'immagine di background */
+ .description-text{
+      line-height: 220px;
+     vertical-align: middle;
+ }
+
+ .subcat-products-description:hover .description-container{
+     opacity: 0.7;
+ }
+
+ .description-container:hover .description-text{
+     opacity: 1;
+     font-size:25px;
+     font-weight: 700;
+     font-family: "Times New Roman",Times,serif;
+     text-align: center;
+ }
+
+ /* fine gestione della visualizzazione */
+
  /* Pager */
 .pager li > a, .pager li > span {
 	border: 0;
