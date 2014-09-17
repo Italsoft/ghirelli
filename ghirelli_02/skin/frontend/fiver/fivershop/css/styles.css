@@ -756,7 +756,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .subcat-products {
     float: left;
     width: 406px; /*precedente width: 300px;*/
-    margin: 0 6px 10px 6px;
+    margin: 0 6px 30px 6px;
 }
 
 .subcat-products img {
@@ -6080,7 +6080,7 @@ h2.resp-tab-active {
         border: none;
         float: none;
         width: 100%;
-        min-height: inherit:
+        min-height: inherits;
         clear: none;
     }
     .resp-accordion-closed {
