@@ -55,6 +55,12 @@
                     <layout_handle>page_one_column</layout_handle>
                     <is_default>1</is_default>
                 </one_column>
+                <one_column_w_head module="page" translate="label">
+                    <label>1 column with image</label>
+                    <template>page/1column_w_headimage.phtml</template>
+                    <layout_handle>page_one_column_w_head</layout_handle>
+                    <is_default>1</is_default>
+                </one_column_w_head>
                 <savoir_faire module="page" translate="label">
                     <label>savoir faire</label>
                     <template>page/savoirfaire.phtml</template>

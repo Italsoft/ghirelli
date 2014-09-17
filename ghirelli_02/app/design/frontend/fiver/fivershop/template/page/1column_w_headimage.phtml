@@ -55,9 +55,9 @@ if($preset==1) {
         <div class="main-container col1-layout home-content-container">
             <div class="header-background-default">
                 <?php
-                    /*$params = $this->getRequest()->getParams();*/
-                    $_imageUrl = Mage::getBaseUrl('media').'catalog/category/copertina_ghirelli5_1.png';
-                    $_imgHtml = '<img src="'.$_imageUrl.'" alt="immagine di titolo pagina La Maison" title="Ghirelli - La Maison" />';
+                /*$params = $this->getRequest()->getParams();*/
+                $_imageUrl = Mage::getBaseUrl('media').'catalog/category/copertina_ghirelli5_1.png';
+                $_imgHtml = '<img src="'.$_imageUrl.'" alt="immagine header" title="Ghirelli header" />';
                 ?>
                 <?php echo $_imgHtml ?>
 
@@ -81,6 +81,7 @@ if($preset==1) {
                 </div>
             </div>
         </div>
+        <div style="margin-top: 200px">provvisorio in attesa di sistemazione</div>
         <?php echo $this->getChildHtml('footer') ?>
         <?php echo $this->getChildHtml('before_body_end') ?>
     </div>
