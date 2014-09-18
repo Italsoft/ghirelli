@@ -269,7 +269,7 @@ div.shown-sub {
     outline: none;
     width: 100%;
     z-index: 9;
-    height: 60px !important;
+    height: 50px !important; /*Before 60px*/
 }
 #fiver-nav .sub-wrapper {
     display: none;
@@ -312,7 +312,7 @@ div.shown-sub {
 	border: 0 ;
 }
 #fiver-nav li.level0 ul li.groups a {
-    font-size: 120%;
+    /*font-size: 120%;*/
     text-transform: uppercase;
 	padding-bottom:0px;
 	border: 0 ;
@@ -329,14 +329,14 @@ div.shown-sub {
     -webkit-transition: all 0.1s ease-out 0s;
 	transition: all 0.1s ease-out 0s;
     border: 0 none;
-    font-size: 13px;
+    font-size: 14px; /*Before 13px*/
     height: auto;
     line-height: normal;
     margin: 0;
     outline: medium none;
     padding: 0;
     text-transform: capitalize;
-    padding: 12px 15px !important;
+    /*padding: 12px 15px !important;*/
 }
 #fiver-nav li.level0 ul li a span.title_group {
 }

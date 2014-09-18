@@ -155,6 +155,7 @@ textarea {
   margin: 0;
   font-family: inherit;
   font-size: 100%;
+  margin-bottom: 10px;
 }
 
 button,
