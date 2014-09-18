@@ -27,7 +27,7 @@
 
 * { margin:0; padding:0; }
 
-body {color:#999999; text-align:center; font-size: 12px; line-height: 1.5em;}
+body {color:#999999; text-align:center; font-size: 14px; line-height: 1.5em;}
 img { border: 0; max-width: 100%; vertical-align:top;}
 a {
 	color:#818181; 
@@ -323,7 +323,7 @@ ul,ol         { list-style:none; }
 /* Form Elements */
 input,select,textarea,button { vertical-align:middle; color:#2f2f2f; }
 input.input-text,select,textarea { background:#fff; border:1px solid #E5E5E5; }
-input.input-text,textarea { padding: 7px 2px; height: 100%;}
+input.input-text,textarea { padding: 7px 2px; height: 35px;} /*Before height: 100%*/
 select { padding: 6px 6px 6px 2px; }
 select option { padding-right:10px; }
 select.multiselect option {padding:5px 5px; }
@@ -389,7 +389,10 @@ input.input-text:focus,select:focus,textarea:focus {}
 /* Form lists */
 /* Grouped fields */
 /*.form-list { width:535px; margin:0 auto; overflow:hidden; }*/
-.form-list li { margin:0 0 8px; }
+.form-list li {
+    margin:0 0 8px;
+    display: inline-block; /*Before null*/
+}
 .form-list label {
     float: left;
     font-weight: bold;
@@ -404,10 +407,13 @@ input.input-text:focus,select:focus,textarea:focus {}
     position: absolute;
     right: -10px;
 }
-.form-list li.control label { float:none; }
+.form-list li.control label {
+    float:none;
+    padding-top: 10px;
+}
 .form-list li.control input.radio, .form-list li.control input.checkbox {
     float: left;
-    margin: 0 15px 0 0;
+    margin: 10px 15px 0 0;
 }
 .form-list li.control .input-box { clear:none; display:inline; width:auto; }
 /*.form-list li.fields { margin-right:-15px; }*/
@@ -417,23 +423,24 @@ input.input-text:focus,select:focus,textarea:focus {}
     float: left;
     max-width: 275px;
     width: 100%;
+    margin-top: 20px;
 }
 .form-list input.input-text {
-    height: 100%;
+    /*height: 100%;*/
     max-width: 254px;
     width: 100%;
 }
 
 #shipping-zip-form .form-list input.input-text {
     box-shadow: none;
-    height: 100%;
+    height: 25px;
     max-width: 282px;
     width: 100% !important;
 }
 
 #checkout-step-login .form-list input.input-text {
-    height: 100%;
-    margin: 0;
+    height: 30px; /*Before 100%*/
+    margin-top: -15px; /*Before 0*/
     max-width: 254px;
     width: 100%;
 }
@@ -474,7 +481,8 @@ input.input-text:focus,select:focus,textarea:focus {}
     font-size: 11px;
     text-align: left;
 }
-.form-list textarea {width:254px;height:10em; }
+/*.form-list textarea {width:254px;height:10em; }*/
+.form-list textarea {width:700px;height:70px; }
 .form-list select {width:260px;}
 .form-list li.wide .input-box { max-width:535px; width: 100%;}
 .form-list li.wide input.input-text {}
@@ -593,7 +601,7 @@ input.input-text:focus,select:focus,textarea:focus {}
 }
 
 .discount-form .buttons-set button.button {
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
 }
 
@@ -1803,7 +1811,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 .search-col {
     display: block;
-    line-height: 35px;
+    line-height: 40px; /*Before 35px*/
     max-width: 220px;
     position: absolute;
     right: 15px;
@@ -1836,7 +1844,7 @@ tr.summary-details-excluded { font-style:italic; }
 .search-col input.input-text {
     box-shadow: none;
     font-size: 13px;
-    padding: 7px;
+    /*padding: 7px;*/
     text-transform: uppercase;
     color: #666;
     font-size: 10px;
@@ -2398,10 +2406,10 @@ tr.summary-details-excluded { font-style:italic; }
 	padding: 0;
 }
 
-.main-container .breadcrumbs-container .breadcrumbs, 
+.main-container .breadcrumbs-container .breadcrumbs,
 .main-container .breadcrumbs-container .breadcrumbs ul,
 .main-container .breadcrumbs-container .breadcrumbs ul li {
-	line-height: 30px !important;
+	line-height: 10px !important; /*Before 30px*/
 	padding: 0;
 }
 
@@ -2614,7 +2622,7 @@ a.compare span {
     color: #FFFFFF; /*color: #363636*/
     font-size: 14px;
     margin: 0;
-    padding: 10px 0;
+    padding: 7px 0; /*Before 10px*/
     text-transform: uppercase;
 }
 
@@ -3828,7 +3836,7 @@ transition:transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
 .availability-only-details td { background:#ebf0f3; border-bottom:1px solid #fff; font-size:11px; padding:2px 8px 1px; }
 .availability-only-details tr.odd td.last { color:#d95e00; font-weight:bold; }
 
-.product-view .product-shop .availability { font-size:11px; }
+.product-view .product-shop .availability { font-size:14px; } /*Before 11px*/
 /* Email to a Friend */
 .email-friend { margin:0; }
 
@@ -4748,7 +4756,7 @@ transition:transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
 }
 
 #co-billing-form ul.form-list label {
-    padding: 0;
+    /*padding: 0;*/
     margin: 0;
 }
 #co-billing-form ul.form-list label.required em {
@@ -4757,7 +4765,7 @@ transition:transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
     font-style: normal;
     position: absolute;
     right: -10px;
-    top: 0;
+    /*top: 0;*/
 }
 .cart-accordion {
   margin-bottom: 20px;
@@ -6581,11 +6589,14 @@ h2.resp-tab-active {
     font-weight: normal;
     line-height: 35px; 
 }
-.form-list label { padding-bottom: 5px;}
+.form-list label {
+    /*padding-bottom: 5px;*/
+    padding-top: 20px;
+}
 
 #shipping-zip-form .form-list label {
     margin: 10px 0 0;
-    padding: 0;
+    padding: 5px; /*Before 0px*/
 }
 /*  End Login  */
 
@@ -6817,7 +6828,7 @@ p.required {
 	color: #ee1c35;
 	font-size: 12px;
 	margin: 0;
-    padding: 0 0 10px 0;
+    /*padding: 0 0 10px 0;*/
 }
 
 
@@ -7023,6 +7034,7 @@ p.required {
     position: absolute;
     right: -10px;
     top: 0;
+    margin-top: 3px;
 }
 
 #shipping-zip-form ul.form-list li {
