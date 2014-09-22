@@ -234,7 +234,7 @@ ul,ol         { list-style:none; }
 .breadcrumbs-container {
     position: absolute;
     /*bottom: -1px;*/
-    width: 100%
+    width: 100%;
 }
 .breadcrumbs-inner {
 	background:#fff;
@@ -1690,9 +1690,12 @@ tr.summary-details-excluded { font-style:italic; }
 	line-height: 25px;
 }
 /* Top Header ================================================================================ */
+ /* altezza dell'header principale, sommato all'altezza del main-navigation-container deve
+    essere uguale all'altezza dell'immagine di background p.es. 128+35=163(l'immagine è alta 163px */
 .top-header-container {
     background-color: #fff;
     opacity: 0.7;
+    height: 128px;
 }
 
 .top-header-container-2 {
@@ -1807,7 +1810,7 @@ tr.summary-details-excluded { font-style:italic; }
     max-width: 220px;
     position: absolute;
     right: 15px;
-    top: 8px;
+    top: 0px;
     width: 100%;
     z-index: 999;
 }
@@ -2177,6 +2180,7 @@ tr.summary-details-excluded { font-style:italic; }
 .main-navigation-container {
 	position: relative;
 	background: #000000;
+    margin-top:0px;
 }
 .main-navigation-container:before {
 	 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);

@@ -90,7 +90,13 @@
                     <template>page/dovesiamo.phtml</template>
                     <layout_handle>page_dove_siamo</layout_handle>
                     <is_default>1</is_default>
-                </dove_siamo>_siamo>
+                </dove_siamo>
+                <meditazione module="page" translate="label">
+                    <label>meditazione</label>
+                    <template>page/meditazione.phtml</template>
+                    <layout_handle>page_meditazione</layout_handle>
+                    <is_default>1</is_default>
+                </meditazione>
                 <two_columns_left module="page" translate="label">
                     <label>2 columns with left bar</label>
                     <template>page/2columns-left.phtml</template>
