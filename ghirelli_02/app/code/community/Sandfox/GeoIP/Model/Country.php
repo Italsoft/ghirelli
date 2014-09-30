@@ -50,4 +50,18 @@ class Sandfox_GeoIP_Model_Country extends Sandfox_GeoIP_Model_Abstract
 
         return $this;
     }
+
+    public function setAllowedCountries($countries)
+    {
+        if(is_array($countries) || $countries !== "" ){
+            $cntr = is_array($countries) ? $countries : array($countries);
+            $this->allowed_countries = $cntr;
+        }
+    }
+
+    public function getAllowedCountries()
+    {
+
+        return $this->allowed_countries;
+    }
 }
