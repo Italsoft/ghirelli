@@ -114,6 +114,17 @@
                 </three_columns>
             </layouts>
         </page>
+        <events>
+            <controller_front_init_before>
+                <observers>
+                    <page_geoip>
+                        <type>singleton</type>
+                        <class>page/observer</class>
+                        <method>controllerFrontInitBefore</method>
+                    </page_geoip>
+                </observers>
+            </controller_front_init_before>
+        </events>
     </global>
     <frontend>
         <translate>
