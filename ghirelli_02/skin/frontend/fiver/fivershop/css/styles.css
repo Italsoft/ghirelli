@@ -409,11 +409,12 @@ input.input-text:focus,select:focus,textarea:focus {}
 }
 .form-list li.control label {
     float:none;
-    padding-top: 10px;
+    padding-top: 30px;/*before 10px*/
 }
 .form-list li.control input.radio, .form-list li.control input.checkbox {
     float: left;
-    margin: 10px 15px 0 0;
+    margin: 30px 15px 0 0;/*before margin: 10px 15px 0 0;*/
+    padding-top: 30px;
 }
 .form-list li.control .input-box { clear:none; display:inline; width:auto; }
 /*.form-list li.fields { margin-right:-15px; }*/
