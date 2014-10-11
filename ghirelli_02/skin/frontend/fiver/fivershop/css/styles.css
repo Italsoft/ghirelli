@@ -391,7 +391,7 @@ input.input-text:focus,select:focus,textarea:focus {}
 /*.form-list { width:535px; margin:0 auto; overflow:hidden; }*/
 .form-list li {
     margin:0 0 8px;
-    display: inline-block; /*Before null*/
+    display: table-row; /*Before null*/
 }
 .form-list label {
     float: left;
