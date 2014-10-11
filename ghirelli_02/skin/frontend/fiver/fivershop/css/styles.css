@@ -323,7 +323,7 @@ ul,ol         { list-style:none; }
 /* Form Elements */
 input,select,textarea,button { vertical-align:middle; color:#2f2f2f; }
 input.input-text,select,textarea { background:#fff; border:1px solid #E5E5E5; }
-input.input-text,textarea { padding: 7px 2px; height: 35px;} /*Before height: 100%*/
+input.input-text,textarea { padding: 0px 5px; height: 35px;} /*Before height: 100% - input.input-text,textarea { padding: 7px 2px; height: 35px;}*/
 select { padding: 6px 6px 6px 2px; }
 select option { padding-right:10px; }
 select.multiselect option {padding:5px 5px; }
@@ -417,7 +417,7 @@ input.input-text:focus,select:focus,textarea:focus {}
 }
 .form-list li.control .input-box { clear:none; display:inline; width:auto; }
 /*.form-list li.fields { margin-right:-15px; }*/
-.form-list .input-box { display:block; clear:both; max-width:260px; }
+.form-list .input-box { display:block; clear:both; width:250px; }
 .form-list .field {
     clear: both;
     float: left;
@@ -601,7 +601,7 @@ input.input-text:focus,select:focus,textarea:focus {}
 }
 
 .discount-form .buttons-set button.button {
-    margin-top: 10px;
+    margin-top: 30px;/*10px*/
     padding: 0;
 }
 
@@ -1739,7 +1739,7 @@ tr.summary-details-excluded { font-style:italic; }
 .top-header .quick-access {}
 .welcome-msg {
     float: left;
-    font-size: 10px;
+    font-size: 14px;/*10px*/
     margin: 7px 0 0 0;
     text-transform: uppercase;
 }
@@ -1774,7 +1774,7 @@ tr.summary-details-excluded { font-style:italic; }
 .top-header .form-language select.flags option { background-position:4px 50%; background-repeat:no-repeat; padding-left:25px; }
 .top-header .links { 
 	float: left;
-	font-size: 10px;
+	font-size: 14px;/*10px*/
 	text-transform:uppercase;
 	padding-top: 6px; 
 	margin: 0; 
@@ -1850,7 +1850,7 @@ tr.summary-details-excluded { font-style:italic; }
     /*padding: 7px;*/
     text-transform: uppercase;
     color: #666;
-    font-size: 10px;
+    font-size: 12px; /*10px*/
     position: absolute;
     right: 0;
     top: 0;
@@ -2115,7 +2115,7 @@ tr.summary-details-excluded { font-style:italic; }
 	margin-top: 0 !important;
 }
 .top-header .mini-cart .mini-cart-title {
-    font-size: 10px;
+    font-size: 14px;/*10px*/
     text-transform: uppercase;
 }
 
@@ -5084,7 +5084,7 @@ font: 20px/20px 'BebasRegular',Helvetica,sans-serif;
 .block-progress dd.complete {}
 .block-progress p { margin:0; }
 .opc{
-	margin-top: 30px;
+	margin-top: 85px;/*before 30px*/
 }
 .opc .buttons-set { margin-top:0; padding-top:2em; }
 .opc .buttons-set p.required {
@@ -5169,7 +5169,7 @@ font: 20px/20px 'BebasRegular',Helvetica,sans-serif;
 #opc-review .authentication { margin:0 auto; width:570px; }
 #opc-review .warning-message { color:#222; font-weight:bold; text-align:center; padding:10px 10px 0; }
 .opc-block-progress {
-	margin-top: 30px;
+	margin-top: 30px;/*before 30px*/
 }
 /* Common styles for: Multiple Addresses Checkout and Generic Info Set
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
