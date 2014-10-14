@@ -2179,15 +2179,18 @@ tr.summary-details-excluded { font-style:italic; }
 }
 .main-navigation-container {
 	position: relative;
-	background: #000000;
+	background: #333333;
     margin-top:0px;
+    opacity: 0.8;
+    font-size:13px;
 }
+
 .main-navigation-container:before {
 	 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
 }
 .main-navigation {
 	position: relative;
-	background: #000; /*background: #fff;*/
+	background: #333333;
 	max-width: 1170px;
 	width: 100%;
 	/*margin: 48px auto;*/
