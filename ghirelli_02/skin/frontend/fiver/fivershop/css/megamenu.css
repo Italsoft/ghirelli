@@ -10,6 +10,7 @@
 }
 .fiver-main-menu {
 	position: relative;
+    background-color:#333333;
 }
 .fiver-main-menu , .fiver-navigation { /* z-index: 99 ; */}
 .fiver-navigation #fiver-nav {
@@ -87,24 +88,35 @@
 }
 
 
-#fiver-nav li.active a.level-top,
+#fiver-nav li.active a.level-top{
+    background-color: transparent;
+    /*color: #FFD700; /*color: #363636;*/
+    color: #FFFFFF;
+    text-decoration: underline;
+    /*font-weight: bold;*/
+    /*font-weight: normal;*/
+}
+
 #fiver-nav li:hover a.level-top{
     background-color: transparent;
-    color: #FFD700; /*color: #363636;*/
-    font-weight: bold;
+    /*color: #FFD700; /*color: #363636;*/
+    color: #FFFFFF;
+    text-decoration: underline;
+    /*font-weight: bold;*/
+    /*font-weight: normal;*/
 }
 
 /* aggiunta per assegnare colore dorato in hover sul menu
   vedi mainmenu/top.phtml*/
-.level-top:hover{
+/*.level-top:hover{
     background-color: transparent !important;
     color: #FFD700  !important;
     font-weight: bold !important;
-}
+}*/
 
 
 #fiver-nav li.active a.level-top {
-    color: #FFD700 !important;
+    color: #FFFFFF !important;
 }
 
 
@@ -113,26 +125,24 @@
 }
 
 #fiver-nav a, #megamenu a, #fiver-nav li.level0 a {
-    color: #FFFFFF; /*color: #363636*/
+    color: #999999;
     position: relative;
     text-align: center;
     width: 190px;
 }
 
 .fiver-navigation #fiver-nav li.level0 ul li.level1 a:hover {
+    -webkit-transition: all 0.1s ease-out 0s;
+    transition: all 0.1s ease-out 0s;
+    background-color:#222222 !important;
+}
+/*.fiver-navigation #fiver-nav li.level0 ul li.level2 a:hover {
   color: #363636 !important;
   text-decoration:none;
   background: #e8f2f4;
   -webkit-transition: all 0.1s ease-out 0s;
   transition: all 0.1s ease-out 0s;
-}
-.fiver-navigation #fiver-nav li.level0 ul li.level2 a:hover {
-  color: #363636 !important;
-  text-decoration:none;
-  background: #e8f2f4;
-  -webkit-transition: all 0.1s ease-out 0s;
-  transition: all 0.1s ease-out 0s;
-}
+}*/
 
 
 /*Label category*/
@@ -281,10 +291,12 @@ div.shown-sub {
     left: -10000px;
     position: absolute;
     top: 35px;               /*offset dell'altezza esatta di fiver-nav */
-    background-color: #808080;
+    background-color:#222222;
     width: 100%;
-    opacity: 0.8 !important;
+    /*opabcity: 0.8 !important;*/
 }
+
+
 #fiver-nav li.level0 ul li {
     height: auto;
 }
@@ -343,7 +355,14 @@ div.shown-sub {
     text-transform: capitalize;
     padding: 12px 15px !important;
 }
+
 #fiver-nav li.level0 ul li a span.title_group {
+    color: #666666;
+}
+
+#fiver-nav li.level0 ul li a span.title_group:hover {
+    color: #ffffff !important;
+    text-decoration:underline;
 }
 
 #fiver-nav ul li ul.level1 li, #fiver-nav ul li ul.level2 li {
