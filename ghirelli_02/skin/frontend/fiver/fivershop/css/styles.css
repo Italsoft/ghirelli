@@ -125,7 +125,7 @@ input[type="color"],
           border-radius: 0;
 }
 .modal-backdrop, .modal-backdrop.fade.in {
-	opacity: 0.8;
+	opacity: 0.9;
 	background: url("../images/overlay.png") repeat 0 0;
 }
 .btn-primary {
@@ -2187,9 +2187,10 @@ tr.summary-details-excluded { font-style:italic; }
 }
 .main-navigation-container {
 	position: relative;
-	background: #333333;
+	/*background: #333333;*/
+    background: #333333;
     margin-top:0px;
-    opacity: 0.8;
+    opacity: 0.9;
     font-size:13px;
 }
 
