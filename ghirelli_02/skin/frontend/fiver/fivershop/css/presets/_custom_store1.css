@@ -1,12 +1,16 @@
-*/body, .custom-html .block-content p, .my-account .welcome-msg {
+body, .custom-html .block-content p, .my-account .welcome-msg {
   color:#363636;
   font-family:'Lato', sans-serif !important;
   font-size:12px;
 }
 a, a:focus { color:#363636; }
-a:hover {
-  color:#FFD700 !important; /*color:#ef5c47 !important;*/
+/*a:hover {
+  color:#FFD700 !important; *//*color:#ef5c47 !important;*//*
   text-decoration:none;
+}*/
+a:hover {
+    color:#ffffff !important; /*color:#ef5c47 !important;*/
+    text-decoration: underline;
 }
 .wrapper { background-color:#ffffff; }
 h1, h2, h3, h4, h5, h6, #default-menu #nav li a, #wide-menu #nav > li > a, #wide-menu #nav ul.level0 > li > a, .footer-info-top .footer-info li, .footer-info-container .footer-info .about-responsive h4, .footer-info .newsletter-box .form-subscribe-header, .bottom-menu-column h4, .footer-aditional .facebook h4, .footer-aditional .twitter h4, .category-title h1, .home-content h3.title, .who-we-are h1, .main .col-main .page-title h1, .col-main .cart-empty a, .about-content .wel-come h2, .about-content .center-title h1, .about-content h2, .afew-container .retina-ready h3, .afew-container .mobile-friendly h3, .afew-container .wide-or h3, .afew-container .responsive-layout h3, .post-list-item h2 a { font-family:'Lato', sans-serif; }
@@ -39,7 +43,7 @@ h1, h2, h3, h4, h5, h6, .home-content h3.title, .who-we-are h1, .footer-info .ne
   display:inline-block;
 }
 .footer-info-container .footer-info .nova-footer-info .nova-footer-box1 p.view-more a:hover, .fiver-navigation #fiver-nav li.level0 ul li a:hover { background-color:#ef5c47; }
-.fiver-navigation #fiver-nav li.level0 ul li.level1 a:hover { background:#f0f0f0; }
+.fiver-navigation #fiver-nav li.level0 ul li.level1 a:hover { background:#000; }
 .fiver-navigation #fiver-nav .active a { color:#ef5c47 !important; }
 .banner-button-view { background-color:#ef5c47; }
 .banner-button-view:hover { background-color:#292929; }
@@ -52,7 +56,7 @@ h1, h2, h3, h4, h5, h6, .home-content h3.title, .who-we-are h1, .footer-info .ne
 .header .i-header-content .nova-mgt-header-social-icons ul li:hover { background-color:#292929; }
 .header .i-header-content .nova-mgt-header-social-icons ul li a i { color:#ffffff; }
 .header .i-header-content .nova-mgt-header-social-icons ul li a i:hover { color:#ffffff !important; }
-.fiver-navigation #fiver-nav li.level0 ul li a { color:#363636 !important; }
+.fiver-navigation #fiver-nav li.level0 ul li a { color:#ffffff !important; }
 .item:hover .line, .banner-item:hover .line { background:#ef5c47; }
 #wide-menu #nav > li.active > a, #wide-menu #nav > li.parent:hover > a, .header .mini-cart .block-content .price, #wide-menu #nav > li.parent.active > a, #wide-menu #nav ul.level0 > li > a, #wide-menu #nav ul li a:hover, .sorter .sort-by ul li a.active, .sorter .limiter ul li a.active, .special-price .price, .block .regular-price, .block .regular-price .price, .regular-price .price, .footer-info-container .footer-info .contact-us span, .products-list .desc a.link-learn, .block-tags .actions a:hover { color:#ef5c47; }
 .footer-info-top .footer-info ul li a { color:#363636; }
