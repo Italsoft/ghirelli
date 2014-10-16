@@ -1701,8 +1701,7 @@ tr.summary-details-excluded { font-style:italic; }
  /* altezza dell'header principale, sommato all'altezza del main-navigation-container deve
     essere uguale all'altezza dell'immagine di background p.es. 128+35=163(l'immagine è alta 163px */
 .top-header-container {
-    background-color: #fff;
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.6);
     height: 128px;
 }
 
@@ -1731,11 +1730,11 @@ tr.summary-details-excluded { font-style:italic; }
 }
 
 .top-header {
-
-   position: relative;
+    position: relative;
     text-align: right;
-
+    background-color: rgba(180,180,180,0.7);
 }
+
 .top-header .quick-access {}
 .welcome-msg {
     float: left;
@@ -1814,10 +1813,10 @@ tr.summary-details-excluded { font-style:italic; }
 
 .search-col {
     display: block;
-    line-height: 40px; /*Before 35px*/
+    line-height: 35px;
     max-width: 220px;
     position: absolute;
-    right: 15px;
+    right: 0px;
     top: 0px;
     width: 100%;
     z-index: 999;
