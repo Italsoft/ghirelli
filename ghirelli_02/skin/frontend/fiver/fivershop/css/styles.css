@@ -125,7 +125,7 @@ input[type="color"],
           border-radius: 0;
 }
 .modal-backdrop, .modal-backdrop.fade.in {
-	opacity: 0.8;
+	opacity: 0.9;
 	background: url("../images/overlay.png") repeat 0 0;
 }
 .btn-primary {
@@ -1702,8 +1702,7 @@ tr.summary-details-excluded { font-style:italic; }
  /* altezza dell'header principale, sommato all'altezza del main-navigation-container deve
     essere uguale all'altezza dell'immagine di background p.es. 128+35=163(l'immagine è alta 163px */
 .top-header-container {
-    background-color: #fff;
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.6);
     height: 128px;
 }
 
@@ -1732,11 +1731,11 @@ tr.summary-details-excluded { font-style:italic; }
 }
 
 .top-header {
-
-   position: relative;
+    position: relative;
     text-align: right;
-
+    background-color: rgba(180,180,180,0.7);
 }
+
 .top-header .quick-access {}
 .welcome-msg {
     float: left;
@@ -1815,10 +1814,10 @@ tr.summary-details-excluded { font-style:italic; }
 
 .search-col {
     display: block;
-    line-height: 40px; /*Before 35px*/
+    line-height: 35px;
     max-width: 220px;
     position: absolute;
-    right: 15px;
+    right: 0px;
     top: 0px;
     width: 100%;
     z-index: 999;
@@ -2188,15 +2187,19 @@ tr.summary-details-excluded { font-style:italic; }
 }
 .main-navigation-container {
 	position: relative;
-	background: #000000;
+	/*background: #333333;*/
+    background: #333333;
     margin-top:0px;
+    opacity: 0.9;
+    font-size:13px;
 }
+
 .main-navigation-container:before {
 	 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
 }
 .main-navigation {
 	position: relative;
-	background: #000; /*background: #fff;*/
+	background: #333333;
 	max-width: 1170px;
 	width: 100%;
 	/*margin: 48px auto;*/

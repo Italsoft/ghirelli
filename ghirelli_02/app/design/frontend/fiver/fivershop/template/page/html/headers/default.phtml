@@ -69,51 +69,16 @@ if ($block_top_bar_left || $block_top_bar_center || $block_top_bar_right):
             </div>
         </div>
     </div>
-
-    <!-- il logo deve essere in primo piano senza trasparenza.... TODO -->
     <div>
-        <?php if ($this->getIsHomePage()): ?>
-            <div>
-                <h1 class="logo" style="margin:0"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
-                                    class="logo"><img src="<?php echo $this->getLogoSrc() ?>"
-                                                      alt="<?php echo $this->getLogoAlt() ?>"/></a></h1>
-            </div>
-        <?php else: ?>
-            <div>
-                <h1 class="logo" style="margin: 0"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
-                                    class="logo"><img src="<?php echo $this->getLogoSrc() ?>"
-                                                      alt="<?php echo $this->getLogoAlt() ?>"/></a></h1>
-            </div>
-        <?php endif ?>
+        <div>
+            <h1>
+                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" >
+                    <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/>
+                </a>
+            </h1>
+        </div>
     </div>
 </div>
-<!--<div class="header-container">
-    <div class="header container">
-        <div class="i-header-content">
-            <div class="row">
-            </div>
-        </div>
-        <?php /*echo $this->getChildHtml('topContainer'); */?>
-    </div>
-</div>-->
-
-
-<!--<div class="header-center">
-    <?php /*if ($this->getIsHomePage()): */?>
-        <div>
-            <h1 class="logo"><a href="<?php /*echo $this->getUrl('') */?>" title="<?php /*echo $this->getLogoAlt() */?>"
-                                class="logo"><img src="<?php /*echo $this->getLogoSrc() */?>"
-                                                  alt="<?php /*echo $this->getLogoAlt() */?>"/></a></h1>
-        </div>
-    <?php /*else: */?>
-        <div>
-            <h1 class="logo"><a href="<?php /*echo $this->getUrl('') */?>" title="<?php /*echo $this->getLogoAlt() */?>"
-                                class="logo"><img src="<?php /*echo $this->getLogoSrc() */?>"
-                                                  alt="<?php /*echo $this->getLogoAlt() */?>"/></a></h1>
-        </div>
-    <?php /*endif */?>
-</div>-->
-
 
 <div class="main-navigation-container">
     <div class="main-navigation container">
