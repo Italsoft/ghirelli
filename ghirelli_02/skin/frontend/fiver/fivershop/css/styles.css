@@ -240,7 +240,7 @@ ul,ol         { list-style:none; }
 	background:#fff;
 	padding-bottom: 12px;
     padding-top: 12px;
-    border: #ddd solid 1px;
+    /*border: #ddd solid 1px;*/
     margin: 0 auto;
     border-bottom: 0;
 }
@@ -706,6 +706,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .notice-msg { border-color:#fcd344; background-color:#fafaec; background-image:url(../images/i_msg-note.gif); color:#3d6611; }
 
 /* BreadCrumbs */
+/* ATTENZIONE: z-index=100, altrimenti viene posizionato sotto agli altri elementi */
 .breadcrumbs { 
 	text-transform: uppercase;
 	font-size:11px; 
@@ -713,6 +714,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 	margin: 0; 
 	padding-top: 5px;
 	text-align: left;
+    z-index: 100;
 }
 .breadcrumbs ul {  
 	margin: 0; 
