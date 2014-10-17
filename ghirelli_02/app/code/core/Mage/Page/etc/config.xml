@@ -61,6 +61,12 @@
                     <layout_handle>page_one_column_w_head</layout_handle>
                     <is_default>1</is_default>
                 </one_column_w_head>
+                <two_columns_right_w_head module="page" translate="label">
+                    <label>2 columns right with image</label>
+                    <template>page/2columns-right_w_headimage.phtml</template>
+                    <layout_handle>page_two_columns_right_w_head</layout_handle>
+                    <is_default>1</is_default>
+                </two_columns_right_w_head>
                 <savoir_faire module="page" translate="label">
                     <label>savoir faire</label>
                     <template>page/savoirfaire.phtml</template>
