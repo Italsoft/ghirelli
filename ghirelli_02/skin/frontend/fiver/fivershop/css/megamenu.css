@@ -83,15 +83,12 @@
     display: block;
     white-space: nowrap;
 }
-#fiver-nav li.active a.level-top {
-    outline: none;
-}
-
 
 #fiver-nav li.active a.level-top{
+    outline: none;
     background-color: transparent;
     /*color: #FFD700; /*color: #363636;*/
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-decoration: underline;
     /*font-weight: bold;*/
     /*font-weight: normal;*/
@@ -100,7 +97,7 @@
 #fiver-nav li:hover a.level-top{
     background-color: transparent;
     /*color: #FFD700; /*color: #363636;*/
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-decoration: underline;
     /*font-weight: bold;*/
     /*font-weight: normal;*/
@@ -361,7 +358,7 @@ div.shown-sub {
 }
 
 #fiver-nav li.level0 ul li a span.title_group:hover {
-    color: #ffffff !important;
+    color: #FFFFFF !important;
     text-decoration:underline;
 }
 

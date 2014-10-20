@@ -9,7 +9,7 @@ a, a:focus { color:#363636; }
   text-decoration:none;
 }*/
 a:hover {
-    color:#ffffff !important; /*color:#ef5c47 !important;*/
+    color:#B4B1B1 !important; /*color:#ef5c47 !important;*/
     text-decoration: underline;
 }
 .wrapper { background-color:#ffffff; }
