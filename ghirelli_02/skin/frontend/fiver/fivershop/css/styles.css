@@ -707,11 +707,11 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 
 /* BreadCrumbs */
 /* ATTENZIONE: z-index=100, altrimenti viene posizionato sotto agli altri elementi */
-.breadcrumbs { 
+.breadcrumbs {
 	text-transform: uppercase;
-	font-size:11px; 
-	line-height: 20px; 
-	margin: 0; 
+	font-size:11px;
+	line-height: 20px;
+	margin: 30px 0 0 0; /* serve perché non interferisca con il sottomenu del menu principale*/
 	padding-top: 5px;
 	text-align: left;
     z-index: 100;
