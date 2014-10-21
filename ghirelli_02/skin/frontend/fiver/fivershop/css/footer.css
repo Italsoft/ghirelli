@@ -2,8 +2,8 @@
 .newsletter {width: 45%;}
 .cms_footer_links {text-transform: uppercase;}
 .input-box{
-    height: 1px; /*Before 25px*/
-    padding-top: 2px; /*Before 8px*/
+    height: 20px; /*Before 25px*/
+    padding-top: 10px; /*Before 8px*/
 }
 
 .footer-social{

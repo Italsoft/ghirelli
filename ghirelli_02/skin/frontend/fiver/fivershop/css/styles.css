@@ -324,7 +324,7 @@ ul,ol         { list-style:none; }
 /* Form Elements */
 input,select,textarea,button { vertical-align:middle; color:#2f2f2f; }
 input.input-text,select,textarea { background:#fff; border:1px solid #E5E5E5; }
-input.input-text,textarea { padding: 7px 2px; height: 35px;} /*Before height: 100%*/
+input.input-text,textarea { padding: 0px 5px; height: 35px;} /*Before height: 100% - input.input-text,textarea { padding: 7px 2px; height: 35px;}*/
 select { padding: 6px 6px 6px 2px; }
 select option { padding-right:10px; }
 select.multiselect option {padding:5px 5px; }
@@ -392,7 +392,7 @@ input.input-text:focus,select:focus,textarea:focus {}
 /*.form-list { width:535px; margin:0 auto; overflow:hidden; }*/
 .form-list li {
     margin:0 0 8px;
-    display: inline-block; /*Before null*/
+    display: table-row; /*Before null*/
 }
 .form-list label {
     float: left;
@@ -410,21 +410,23 @@ input.input-text:focus,select:focus,textarea:focus {}
 }
 .form-list li.control label {
     float:none;
-    padding-top: 10px;
+    padding-top: 30px;/*before 10px*/
 }
 .form-list li.control input.radio, .form-list li.control input.checkbox {
     float: left;
-    margin: 10px 15px 0 0;
+    margin: 30px 15px 0 0;/*before margin: 10px 15px 0 0;*/
+    padding-top: 30px;
 }
 .form-list li.control .input-box { clear:none; display:inline; width:auto; }
 /*.form-list li.fields { margin-right:-15px; }*/
-.form-list .input-box { display:block; clear:both; max-width:260px; }
+.form-list .input-box { display:block; clear:both; width:250px; }
 .form-list .field {
     clear: both;
     float: left;
     max-width: 275px;
     width: 100%;
     margin-top: 20px;
+    height: 67px;
 }
 .form-list input.input-text {
     /*height: 100%;*/
@@ -446,7 +448,7 @@ input.input-text:focus,select:focus,textarea:focus {}
     width: 100%;
 }
 #contactForm .form-list input.input-text {
-    height: 100%;
+    /*height: 100%;*/
     max-height: 30px;
     max-width: 260px;
     width: 100%;
@@ -602,7 +604,7 @@ input.input-text:focus,select:focus,textarea:focus {}
 }
 
 .discount-form .buttons-set button.button {
-    margin-top: 10px;
+    margin-top: 30px;/*10px*/
     padding: 0;
 }
 
@@ -733,7 +735,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 /* Page Heading */
 .page-title { width:100%; }
 .col1-layout .page-title {margin:-57px 0 55px 15px;}
-.page-title h1,
+.page-title h1 { margin:0; font-size:20px; visibility: hidden;}
 .page-title h2 { margin:0; font-size:20px;}
 .page-title .separator { margin:0 3px; }
 .page-title .link-rss { float:right; margin:7px 0 0; }
@@ -1741,7 +1743,7 @@ tr.summary-details-excluded { font-style:italic; }
 .top-header .quick-access {}
 .welcome-msg {
     float: left;
-    font-size: 10px;
+    font-size: 14px;/*10px*/
     margin: 7px 0 0 0;
     text-transform: uppercase;
 }
@@ -1776,7 +1778,7 @@ tr.summary-details-excluded { font-style:italic; }
 .top-header .form-language select.flags option { background-position:4px 50%; background-repeat:no-repeat; padding-left:25px; }
 .top-header .links { 
 	float: left;
-	font-size: 10px;
+	font-size: 14px;/*10px*/
 	text-transform:uppercase;
 	padding-top: 6px; 
 	margin: 0; 
@@ -1852,7 +1854,7 @@ tr.summary-details-excluded { font-style:italic; }
     /*padding: 7px;*/
     text-transform: uppercase;
     color: #666;
-    font-size: 10px;
+    font-size: 12px; /*10px*/
     position: absolute;
     right: 0;
     top: 0;
@@ -2117,7 +2119,7 @@ tr.summary-details-excluded { font-style:italic; }
 	margin-top: 0 !important;
 }
 .top-header .mini-cart .mini-cart-title {
-    font-size: 10px;
+    font-size: 14px;/*10px*/
     text-transform: uppercase;
 }
 
@@ -2284,9 +2286,10 @@ tr.summary-details-excluded { font-style:italic; }
 	font-size: 18px;
 }
 .header-content-title-absolute h1 ,.header-content-title-absolute h3  {
-	color: #ffffff !important;
+	/*color: #ffffff !important;
 	text-transform: none;
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);*/
+    visibility: hidden;!important
 }
 .fiver-main-content {
 	border-top: #ddd solid 1px;
@@ -4071,7 +4074,7 @@ transition:transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
 /* Product Images */
 .product-view .product-img-box {position: relative;}
 .col3-layout .product-view .product-img-box { float:none; margin:0 auto; }
-.product-view .product-img-box .product-image { margin:0 0 13px; min-height: 720px; overflow: hidden;}
+.product-view .product-img-box .product-image { margin:0 0 13px; /*min-height: 720px;*/ overflow: hidden;}
 .product-view .product-img-box .product-image img {margin:0 auto;}
 .product-view .product-img-box .product-image-zoom { position:relative; width:326px; height:370px; overflow:hidden; z-index:9; border: #e3e3e3 solid 1px;}
 .product-view .product-img-box .product-image-zoom img { position:absolute; left:0; top:0; cursor:move; border: #e3e3e3 solid 1px;}
@@ -5090,7 +5093,7 @@ font: 20px/20px 'BebasRegular',Helvetica,sans-serif;
 .block-progress dd.complete {}
 .block-progress p { margin:0; }
 .opc{
-	margin-top: 30px;
+	margin-top: 85px;/*before 30px*/
 }
 .opc .buttons-set { margin-top:0; padding-top:2em; }
 .opc .buttons-set p.required {
@@ -5175,7 +5178,7 @@ font: 20px/20px 'BebasRegular',Helvetica,sans-serif;
 #opc-review .authentication { margin:0 auto; width:570px; }
 #opc-review .warning-message { color:#222; font-weight:bold; text-align:center; padding:10px 10px 0; }
 .opc-block-progress {
-	margin-top: 30px;
+	margin-top: 30px;/*before 30px*/
 }
 /* Common styles for: Multiple Addresses Checkout and Generic Info Set
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -6800,6 +6803,7 @@ p.required {
     clear: both;
     display: block;
     max-width: none;
+    height: 40px;
 }
 
 .account-login #email {

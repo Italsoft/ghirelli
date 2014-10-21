@@ -1922,7 +1922,7 @@
 .icon-thumbs-down-1:before { content: '\e9b6'; } /* '' */
 .icon-thumbs-down-2:before { content: '\ea28'; } /* '' */
 .icon-thumbs-down:before { content: '\e888'; } /* '' */
-.icon-bag:before { content: '👜'; } /* '\1f45c' */
+.icon-bag:before { content: '\ee2f' } /* '\1f45c' */ /*.icon-bag:before { content: '👜'; } /* '\1f45c' */*/
 .icon-user-4:before { content: '\eba9'; } /* '' */
 .icon-user:before { content: '👤'; } /* '\1f464' */
 .icon-user-7:before { content: '\eec2'; } /* '' */
