@@ -734,7 +734,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 /* Page Heading */
 .page-title { width:100%; }
 .col1-layout .page-title {margin:-57px 0 55px 15px;}
-.page-title h1,
+.page-title h1 { margin:0; font-size:20px; visibility: hidden;}
 .page-title h2 { margin:0; font-size:20px;}
 .page-title .separator { margin:0 3px; }
 .page-title .link-rss { float:right; margin:7px 0 0; }
