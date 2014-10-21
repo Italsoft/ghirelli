@@ -1,7 +1,7 @@
 <?php $_maincategorylisting = $this->getCurrentCategory() ?>
 <?php $_categories = $this->getCurrentChildCategories() ?>
-<h2><?php echo $this->__('Browse Products') ?> </h2>
-<div class="subcat-listing">
+<!--<h2><?php echo $this->__('Browse Products') ?> </h2>-->
+<div class="subcat-listing"style="margin-top: -12px;">
     <ul>
         <? foreach ($_categories as $_category): ?>
             <? if ($_category->getIsActive()): ?>
