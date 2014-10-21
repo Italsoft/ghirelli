@@ -235,6 +235,7 @@ ul,ol         { list-style:none; }
     position: absolute;
     /*bottom: -1px;*/
     width: 100%;
+    z-index: 0;
 }
 .breadcrumbs-inner {
 	background:#fff;
@@ -869,7 +870,7 @@ su hover del mouse (cambio colore, semitrasparenza e messaggio in evidenza*/
     top: 25px;
     width: 102px;
     z-index: 1000;
-    margin: 0
+    margin: 0;
 }
 .sorter .sort-by ul li {
 	line-height: 25px;
@@ -971,7 +972,7 @@ su hover del mouse (cambio colore, semitrasparenza e messaggio in evidenza*/
 /* Toolbar */
 .toolbar {
     position: relative;
-    z-index: 999;
+    z-index: 50;
 }
 .toolbar-bottom .toolbar {
     border: none;
