@@ -1,7 +1,7 @@
 body, .custom-html .block-content p, .my-account .welcome-msg {
   color:#363636;
   font-family:'Lato', sans-serif !important;
-  font-size:12px;
+  font-size:14px;
 }
 a, a:focus { color:#363636; }
 /*a:hover {
