@@ -257,7 +257,7 @@ if($get_effect) {
 						<?php endif; ?>
 					<?php endif; ?> 
 					</div>		    </div>
-            <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a></h3>
+            <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_product->getName()) ?>"><?php echo $this->escapeHtml($_product->getName())."(sku: ".$this->escapeHtml($_product->getSku()).")" ?></a></h3>
             <div class="line"></div>
 			<?php echo $this->getPriceHtml($_product, true) ?>
 			
