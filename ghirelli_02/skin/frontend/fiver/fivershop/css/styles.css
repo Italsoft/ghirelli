@@ -2254,7 +2254,7 @@ tr.summary-details-excluded { font-style:italic; }
 }
 .header-background-default {
 	position: relative;
-	background: url(../images/header-bg-default.png) repeat;
+	/*background: url(../images/header-bg-default.png) repeat;*/ /*Eliminato background topbar*/
 	min-height: 87px;
 }
 .cms-index-index  .header-background-default {
