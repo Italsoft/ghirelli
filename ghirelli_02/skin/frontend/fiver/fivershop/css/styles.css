@@ -236,7 +236,7 @@ ul,ol         { list-style:none; }
     /*bottom: -1px;*/
     width: 100%;
     z-index: 0;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 .breadcrumbs-inner {
 	background:#fff;
@@ -1739,6 +1739,7 @@ tr.summary-details-excluded { font-style:italic; }
     position: relative;
     text-align: right;
     background-color: rgba(180,180,180,0.7);
+    width: 100%;
 }
 
 .top-header .quick-access {}
@@ -2638,7 +2639,7 @@ a.compare span {
     color: #FFFFFF; /*color: #363636*/
     font-size: 14px;
     margin: 0;
-    padding: 7px 0; /*Before 10px*/
+    padding: 17px 0; /*Before 17px*/
     text-transform: uppercase;
 }
 
@@ -6417,6 +6418,7 @@ h2.resp-tab-active {
     margin-bottom: 0 !important;
     /*text-align: right;*/
     text-transform: uppercase;
+    padding-top: 10px;
 }
 .footer address a {
 	color: #FFFFFF;
@@ -6429,6 +6431,7 @@ h2.resp-tab-active {
     display: block;
     text-align: left;
     margin: 0;
+    padding-top: 10px;
 }
 .footer ul.links li {
 	line-height: 35px;

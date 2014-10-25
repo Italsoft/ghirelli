@@ -1263,7 +1263,7 @@
 .icon-left-open-big:before { content: '\e765'; } /* '' */
 .icon-list-2:before { content: '\eb43'; } /* '' */
 .icon-list-nested:before { content: '\eb2e'; } /* '' */
-.icon-right-open-big:before { content: '\e766'; } /* '' */
+.icon-right-open-big:before { content: '\e766'; padding-top: 10px;} /* '' */
 .icon-up-open-big:before { content: '\e767'; } /* '' */
 .icon-progress-0:before { content: '\e768'; } /* '' */
 .icon-progress-1:before { content: '\e769'; } /* '' */

@@ -57,8 +57,8 @@ if ($block_top_bar_left || $block_top_bar_center || $block_top_bar_right):
     <div class="top-header container">
         <div class="row i-top-links">
             <div class="col-md-8 col-sm-7 col-xs-4">
-                <p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
-                <?php echo $this->getChildHtml('topLinks') ?>
+                <p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml()?></p>
+                <?php echo $this->getChildHtml('topLinks')?>
             </div>
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="i-top-right">
