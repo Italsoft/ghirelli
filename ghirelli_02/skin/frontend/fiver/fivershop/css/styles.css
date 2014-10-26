@@ -4026,6 +4026,19 @@ transition:transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
 }
 .short-description .std {
 }
+
+.description .std {
+    /*
+       place holder per le caratterisitche
+       da assegnare alla descrizione completa
+       del prodotto presentata nella pagina specifica
+       del prodotto stesso. Vedi: view_layout/default.phtml
+    */
+    font-weight: normal;
+    margin: 20px auto 30px auto;
+ }
+
+
 .product-collateral .box-collateral { margin:0 0 25px; }
 .product-collateral .right-block {
 	border-left: #dfdfdf solid 1px;

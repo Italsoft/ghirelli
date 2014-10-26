@@ -32,6 +32,7 @@
 <?php else: ?>
     <p class="availability out-of-stock"><?php echo $this->__('Availability:') ?> <span><?php echo $this->__('Out of stock') ?></span></p>
 <?php endif; ?>
+    <p class="product-name"><?php echo " (sku: ".$this->escapeHtml($_product->getSku()).")" ?></p>
 </div>
 <?php echo $this->getChildHtml('product_type_data_extra') ?>
 <?php echo $this->getPriceHtml($_product) ?>
