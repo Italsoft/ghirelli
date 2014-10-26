@@ -1,4 +1,4 @@
-<?php
+                             <?php
 /**
  * Magento
  *
@@ -89,6 +89,7 @@ jQuery('#accordion2').collapse({
                 <tfoot>
                     <tr>
                         <td colspan="50" class="a-right">
+                            <input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
                             <?php if($this->getContinueShoppingUrl()): ?>
                                 <button type="button" title="<?php echo $this->__('Continue Shopping') ?>" class="button btn-continue" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span><span><?php echo $this->__('Continue Shopping') ?></span></span></button>
                             <?php endif; ?>
