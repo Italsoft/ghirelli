@@ -1714,7 +1714,7 @@ tr.summary-details-excluded { font-style:italic; }
  /* altezza dell'header principale, sommato all'altezza del main-navigation-container deve
     essere uguale all'altezza dell'immagine di background p.es. 128+35=163(l'immagine è alta 163px */
 .top-header-container {
-    background-color: rgba(0, 0, 0, 0); /*background-color: rgba(0, 0, 0, 0.6);*/
+    background-color: rgba(0, 0, 0, 0.3); /*background-color: rgba(0, 0, 0, 0.6);*/
     height: 128px;
 }
 
@@ -1778,6 +1778,7 @@ tr.summary-details-excluded { font-style:italic; }
 .top-header .i-top-right {
     float: right;
     margin-left: 10px;
+    color: white;
 }
 .top-header .welcome-msg img{max-width:20px;}
 .top-header .welcome-msg a { color:#ebbc58; }
@@ -2069,6 +2070,7 @@ tr.summary-details-excluded { font-style:italic; }
 .top-header .mini-cart span {
     float: left;
     margin-right: 5px;
+    color: white;
 }
 .top-header .mini-cart .block-content .remove-item i {font-size: 12px;}
 .top-header .mini-cart .cart_circle {
