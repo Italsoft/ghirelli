@@ -1007,6 +1007,13 @@ su hover del mouse (cambio colore, semitrasparenza e messaggio in evidenza*/
 	margin-top: 2px;
 }
 
+/* top-links */
+
+ .top-link-checkout,
+ .top-link{
+    color:#ffffff;
+}
+
 /* Data Table */
 /* TABLES
 ----------------------------------------------------------------*/
@@ -1738,7 +1745,7 @@ tr.summary-details-excluded { font-style:italic; }
 .top-header {
     position: relative;
     text-align: right;
-    background-color: rgba(180,180,180,0.7);
+    /*background-color: rgba(180,180,180,0.7);*/
     width: 100%;
 }
 
