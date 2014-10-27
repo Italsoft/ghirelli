@@ -35,7 +35,7 @@
     <ul class="links hidden-xs" <?php if ($this->getName()): ?> id="<?php echo $this->getName() ?>"<?php endif; ?>>
         <?php foreach ($_links as $_link): ?>
             <!-- inserisce le barrette fra i link -->
-            <?php $_link->setAfterText("<span style='color:#fff;'>&nbsp;&nbsp;&nbsp;&nbsp;|</span>");?>
+            <?php $_link->setAfterText("<span style='color:#fff;'>&nbsp;&nbsp;&nbsp;&nbsp;</span>");?>
             <?php $_link->setAParams("class='top-link'"); ?>
             <?php if ($_link instanceof Mage_Core_Block_Abstract): ?>
                 <?php echo $_link->toHtml()?>
