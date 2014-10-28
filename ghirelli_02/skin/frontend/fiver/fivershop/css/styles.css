@@ -2031,7 +2031,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 .top-header .mini-cart .shopping-cart .price { color:#F01C35; padding-left: 2px;/* will be change */}
 .top-header .mini-cart .block-content {
-    background-color: #FFFFFF;
+    background-color: #000000;
     border: 3px solid #DDDDDD !important;
     display: none;
     min-width: 287px;
