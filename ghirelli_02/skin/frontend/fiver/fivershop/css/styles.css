@@ -31,7 +31,7 @@ body {color:#999999; text-align:center; font-size: 14px; line-height: 1.5em;}
 img { border: 0; max-width: 100%; vertical-align:top;}
 a {
 	color:#818181; 
-	text-decoration:none; 
+	text-decoration:none !important;
 	transition:			color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
 	-moz-transition:	color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
 	-webkit-transition:	color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
@@ -813,7 +813,7 @@ su hover del mouse (cambio colore, semitrasparenza e messaggio in evidenza*/
  .description-container:hover .description-text{
      opacity: 1;
      font-size:25px;
-     font-weight: 700;
+     font-weight: 650;
      font-family: 'Century Gothic', Helvetica, Arial;
      text-align: center;
  }

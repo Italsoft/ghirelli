@@ -103,6 +103,42 @@
                     <layout_handle>page_meditazione</layout_handle>
                     <is_default>1</is_default>
                 </meditazione>
+				<heroes-of-faith module="page" translate="label">
+                    <label>heroes-of-faith</label>
+                    <template>page/heroes-of-faith.phtml</template>
+                    <layout_handle>page_heroes-of-faith</layout_handle>
+                    <is_default>1</is_default>
+                </heroes-of-faith>
+                <messages-from-heaven module="page" translate="label">
+                    <label>messages-from-heaven</label>
+                    <template>page/messages-from-heaven.phtml</template>
+                    <layout_handle>page_messages-from-heaven</layout_handle>
+                    <is_default>1</is_default>
+                </messages-from-heaven>
+                <days-of-grace module="page" translate="label">
+                    <label>days-of-gracen</label>
+                    <template>page/days-of-grace.phtml</template>
+                    <layout_handle>page_days-of-grace</layout_handle>
+                    <is_default>1</is_default>
+                </days-of-grace>
+                <vatican module="page" translate="label">
+                    <label>vatican</label>
+                    <template>page/vatican.phtml</template>
+                    <layout_handle>page_vatican</layout_handle>
+                    <is_default>1</is_default>
+                </vatican>
+                <unique-creations module="page" translate="label">
+                    <label>unique-creations</label>
+                    <template>page/unique-creations.phtml</template>
+                    <layout_handle>page_unique-creations</layout_handle>
+                    <is_default>1</is_default>
+                </unique-creations>
+                <masterpieces module="page" translate="label">
+                    <label>masterpieces</label>
+                    <template>page/masterpieces.phtml</template>
+                    <layout_handle>page_masterpieces</layout_handle>
+                    <is_default>1</is_default>
+                </masterpieces>
                 <two_columns_left module="page" translate="label">
                     <label>2 columns with left bar</label>
                     <template>page/2columns-left.phtml</template>

@@ -451,6 +451,84 @@
         </reference>
     </page_meditazione>
 
+    <page_heroes-of-faith translate="label">
+        <label>Pagina statica heroes-of-faith</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/heroes-of-faith.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_heroes-of-faith>
+
+    <page_messages-from-heaven translate="label">
+        <label>Pagina statica messages-from-heaven</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/messages-from-heaven.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_messages-from-heaven>
+
+    <page_days-of-grace translate="label">
+    <label>Pagina statica days-of-grace</label>
+    <reference name="root">
+        <action method="setTemplate">
+            <template>page/days-of-grace.phtml</template>
+        </action>
+        <!-- Mark root page block that template is applied -->
+        <action method="setIsHandle">
+            <applied>1</applied>
+        </action>
+    </reference>
+</page_days-of-grace>
+
+    <page_vatican translate="label">
+        <label>Pagina statica vatican</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/vatican.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_vatican>
+
+    <page_unique-creations translate="label">
+        <label>Page unique-creations</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/unique-creations.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_unique-creations>
+
+    <page_masterpieces translate="label">
+        <label>Page masterpieces</label>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/masterpieces.phtml</template>
+            </action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+    </page_masterpieces>
+
     <page_two_columns_left translate="label">
         <label>All Two-Column Layout Pages (Left Column)</label>
         <reference name="root">
