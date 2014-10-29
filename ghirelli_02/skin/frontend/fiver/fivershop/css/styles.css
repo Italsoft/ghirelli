@@ -232,7 +232,7 @@ ul,ol         { list-style:none; }
 .page-empty { background:#fff; padding:10px; text-align:left; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
 .breadcrumbs-container {
-    position: absolute;
+    /*position: absolute;*/
     /*bottom: -1px;*/
     width: 100%;
     z-index: 0;
@@ -735,7 +735,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .main .breadcrumbs .home a { }
 /* Page Heading */
 .page-title { width:100%; }
-.col1-layout .page-title {margin:-57px 0 55px 15px;}
+.col1-layout .page-title {margin:-106px 0 55px 15px;} /*.col1-layout .page-title {margin:-57px 0 55px 15px;}*/
 .page-title h1 { margin:0; font-size:20px; visibility: hidden;}
 .page-title h2 { margin:0; font-size:20px;}
 .page-title .separator { margin:0 3px; }
@@ -750,7 +750,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 
 .subtitle,
 .sub-title { clear:both; padding:15px 0 0; font-size:15px; font-weight:bold; margin:0 0 6px;}
-.cms-page-view .col-main {margin-top: 20px;}
+.cms-page-view .col-main {margin-top: 0px;}/*.cms-page-view .col-main {margin-top: 20px;}*/
 /* Notification */
 #notification .alert-bg {background:rgba(0,0,0,0.2); position:fixed; top:0; right:0; bottom:0; left:0; z-index:9999;}
 #notification .bg .close {display:inline-block; width:48px; height:48px; line-height:48px; text-align:center; font-size:48px; color:#fff; cursor:pointer; position:fixed; top:36px; left:50%; margin:0 0 0 -24px; text-shadow:0 0 3px rgba(0, 0, 0, 0.2);}
@@ -2304,8 +2304,8 @@ tr.summary-details-excluded { font-style:italic; }
     visibility: hidden;!important
 }
 .fiver-main-content {
-	border-top: #ddd solid 1px;
-    padding-top: 30px;
+	/*border-top: #ddd solid 1px;*/
+    /*padding-top: 30px;*/
 }
 .cms-index-index .fiver-main-content {
 	border-top: none;
@@ -4026,7 +4026,7 @@ transition:transform 1s cubic-bezier(0.190,1.000,0.220,1.000) 0s;
 
 .product-view {}
 
-.product-essential { margin-bottom: 20px; margin-top: 60px }
+.product-essential { margin-bottom: 20px; margin-top: 0px } /*.product-essential { margin-bottom: 20px; margin-top: 60px }*/
 .product-essential h2 { }
 
 .product-collateral {padding:25px 0; }
