@@ -10,7 +10,9 @@ a, a:focus { color:#363636; }
 }*/
 a:hover {
     color:#B4B1B1 !important; /*color:#ef5c47 !important;*/
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    text-decoration: none;
+
 }
 .wrapper { background-color:#ffffff; }
 h1, h2, h3, h4, h5, h6, #default-menu #nav li a, #wide-menu #nav > li > a, #wide-menu #nav ul.level0 > li > a, .footer-info-top .footer-info li, .footer-info-container .footer-info .about-responsive h4, .footer-info .newsletter-box .form-subscribe-header, .bottom-menu-column h4, .footer-aditional .facebook h4, .footer-aditional .twitter h4, .category-title h1, .home-content h3.title, .who-we-are h1, .main .col-main .page-title h1, .col-main .cart-empty a, .about-content .wel-come h2, .about-content .center-title h1, .about-content h2, .afew-container .retina-ready h3, .afew-container .mobile-friendly h3, .afew-container .wide-or h3, .afew-container .responsive-layout h3, .post-list-item h2 a { font-family:'Lato', sans-serif; }
@@ -99,7 +101,7 @@ a.fiver-button-light:hover, a.fiver-button-dark:hover, .box-icon .box-icon-name:
   border-color:#292929;
   background:#292929;
 }
-.easy-slider, .easy-slider #controls a { background:; }
+.easy-slider, .easy-slider #controls a { }
 .post-list-item h2 a {
   font-size:22px;
   text-transform:none;
