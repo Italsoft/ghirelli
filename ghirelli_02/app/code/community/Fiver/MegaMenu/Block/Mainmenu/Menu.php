@@ -105,7 +105,8 @@ class Fiver_Megamenu_Block_Mainmenu_Menu extends Mage_Catalog_Block_Navigation
         /* rende non cliccabile una voce di menu che contiene un sottomenu attivo */
         if($category->getLevel()==2 && $hasActiveChildren )
         {
-            $html[] = '<a href="'.$this->getCategoryUrl($category).'"'.$linkClass.' onclick="return false;">';
+            /*$html[] = '<a href="'.$this->getCategoryUrl($category).'"'.$linkClass.' onclick="return false;">';*/
+            $html[] = '<a href="'.$this->getCategoryUrl($category).'"'.$linkClass.'>';
             $html[] = '<span>' . $this->escapeHtml($category->getName()) . '</span>';
             $html[] = '</a>';
         }
@@ -309,7 +310,8 @@ class Fiver_Megamenu_Block_Mainmenu_Menu extends Mage_Catalog_Block_Navigation
         /* rende non cliccabile una voce di menu che contiene un sottomenu attivo */
         if($category->getLevel()==2 && $hasActiveChildren )
         {
-            $html[] = '<a href="'.$this->getCategoryUrl($category).'"'.$linkClass.' onclick="return false;">';
+            /*$html[] = '<a href="'.$this->getCategoryUrl($category).'"'.$linkClass.' onclick="return false;">';*/
+            $html[] = '<a href="'.$this->getCategoryUrl($category).'"'.$linkClass.'>';
             $html[] = '<span>' . $this->escapeHtml($category->getName()) . '</span>';
             $html[] = '</a>';
         }
