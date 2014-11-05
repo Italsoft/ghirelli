@@ -719,6 +719,8 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 	padding-top: 5px;
 	text-align: left;
     z-index: 100;
+    float: left;
+    width: auto;
 }
 .breadcrumbs ul {  
 	margin: 0; 
