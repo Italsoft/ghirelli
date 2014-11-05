@@ -50,8 +50,8 @@ h1, h2, h3, h4, h5, h6, .home-content h3.title, .who-we-are h1, .footer-info .ne
 .banner-button-view { background-color:#ef5c47; }
 .banner-button-view:hover { background-color:#292929; }
 .header-container-1 .fiver-navigation { border-top:5px solid #ef5c47; }
-.tp-leftarrow, .tp-rightarrow { background-color:#ffffff; }
-.tp-leftarrow:hover, .tp-rightarrow:hover { background-color:#ef5c47 !important; }
+.tp-leftarrow, .tp-rightarrow { background-color:#383639; }
+.tp-leftarrow:hover, .tp-rightarrow:hover { background-color:#383639 !important; } /*{ background-color:#ef5c47 !important; }*/
 .price-box .special-price .price, .price-box .regular-price .price, .item h3.product-name a { color:#363636 !important; }
 .item h3.product-name a:hover { color:#ef5c47 !important; }
 .header .i-header-content .nova-mgt-header-social-icons ul li { background-color:#444444; }

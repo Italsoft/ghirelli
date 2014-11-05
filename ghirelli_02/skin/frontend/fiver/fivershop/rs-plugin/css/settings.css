@@ -500,12 +500,12 @@ website:   	http://www.themepunch.com
 .tp-rightarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../assets/arrow_right2.png) no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:-9px;}
 
 
-.tp-leftarrow.default i.icon-left-open-big 				{ color: #363636 !important; font-size: 20px; left: 10px; position: absolute; top: 15px;
+.tp-leftarrow.default i.icon-left-open-big 				{ color: #999999 !important; font-size: 20px; left: 10px; position: absolute; top: 15px;
 
 														}														
 														
 
-.tp-rightarrow.default i.icon-right-open-big 			{ color: #363636 !important; font-size: 20px; left: 12px; position: absolute; top: 15px;
+.tp-rightarrow.default i.icon-right-open-big 			{ color: #999999 !important; font-size: 20px; left: 12px; position: absolute; top: 15px; /*363636*/
 
 														}
 														
