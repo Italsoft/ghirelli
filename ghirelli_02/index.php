@@ -34,6 +34,62 @@ Whoops, it looks like you have an invalid PHP version.</h3></div><p>Magento supp
     exit;
 }
 
+require_once 'app/Mage.php';
+
+/* Determine correct language store based on browser */
+function getStoreForLanguage()
+{
+    if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+        foreach (explode(",", strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'])) as $accept) {
+            if (preg_match("!([a-z-]+)(;q=([0-9.]+))?!", trim($accept), $found)) {
+                $langs[] = $found[1];
+                $quality[] = (isset($found[3]) ? (float) $found[3] : 1.0);
+            }
+        }
+        // Order the codes by quality
+        array_multisort($quality, SORT_NUMERIC, SORT_DESC, $langs);
+
+        // get list of stores and use the store code for the key
+        $stores = Mage::app()->getStores(false, true);
+
+        // iterate through languages found in the accept-language header
+        foreach ($langs as $lang) {
+            $lang = substr($lang,0,2);
+            if (isset($stores[$lang]) && $stores[$lang]->getIsActive()) return $stores[$lang];
+        }
+    }
+    return Mage::app()->getStore();
+}
+
+/* Determina il negozio corretto in base all'IP dal quale proviane la richiesta */
+function getStoreForIP()
+{
+    $geoip = Mage::getSingleton('geoip/country');
+    $country = $geoip->getCountry();
+    Mage::log($country);
+//    if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+//        foreach (explode(",", strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'])) as $accept) {
+//            if (preg_match("!([a-z-]+)(;q=([0-9.]+))?!", trim($accept), $found)) {
+//                $langs[] = $found[1];
+//                $quality[] = (isset($found[3]) ? (float) $found[3] : 1.0);
+//            }
+//        }
+//        // Order the codes by quality
+//        array_multisort($quality, SORT_NUMERIC, SORT_DESC, $langs);
+//
+//        // get list of stores and use the store code for the key
+//        $stores = Mage::app()->getStores(false, true);
+//
+//        // iterate through languages found in the accept-language header
+//        foreach ($langs as $lang) {
+//            $lang = substr($lang,0,2);
+//            if (isset($stores[$lang]) && $stores[$lang]->getIsActive()) return $stores[$lang];
+//        }
+//    }
+    return Mage::app()->getStore();
+}
+
+
 /**
  * Error reporting
  */
@@ -73,6 +129,14 @@ require_once $mageFilename;
 if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
     Mage::setIsDeveloperMode(true);
 }
+
+/* Auto redirect to language store view if request is for root */
+//if ($_SERVER['REQUEST_URI'] === '/') {
+//    header('Location: '.getStoreForLanguage()->getBaseUrl());
+//    Mage::log("sono qui");
+//    //getStoreForIP();
+//    exit;
+//}
 
 #ini_set('display_errors', 1);
 
