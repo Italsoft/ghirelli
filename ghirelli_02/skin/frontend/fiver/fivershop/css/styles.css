@@ -710,7 +710,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .notice-msg { border-color:#fcd344; background-color:#fafaec; background-image:url(../images/i_msg-note.gif); color:#3d6611; }
 
 /* BreadCrumbs */
-/* ATTENZIONE: z-index=100, altrimenti viene posizionato sotto agli altri elementi */
+/* ATTENZIONE: z-index=50, altrimenti viene posizionato sotto agli altri elementi */
 .breadcrumbs {
 	text-transform: uppercase;
 	font-size:11px;
@@ -718,7 +718,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 	margin: 12px 0 0 0;
 	padding-top: 5px;
 	text-align: left;
-    z-index: 100;
+    z-index: 50;
     float: left;
     width: auto;
 }
