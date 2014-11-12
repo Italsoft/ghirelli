@@ -208,4 +208,5 @@
 
     #FileETag none
 
-redirect /index.php/custom-rosaries.html http://ghirellicustomrosaries.com
+#redirect /le-collezioni/custom-edition.html http://ghirellicustomrosaries.com
+#redirect /index.php/it/catalog/category/view/id/23 http://ghirellicustomrosaries.com
