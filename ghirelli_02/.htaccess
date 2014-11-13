@@ -207,3 +207,6 @@
 ## http://developer.yahoo.com/performance/rules.html#etags
 
     #FileETag none
+
+#redirect /le-collezioni/custom-edition.html http://ghirellicustomrosaries.com
+#redirect /index.php/it/catalog/category/view/id/23 http://ghirellicustomrosaries.com
