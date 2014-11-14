@@ -91,15 +91,15 @@ if($preset==1) {
                         }
                     }
                 ?>
-                    <?php echo $_imgHtml ?>
-                    <div class="header-content-title<?php if($_imgHtml): echo "-absolute"; endif?>">
-                        <h1 style="visibility: hidden"><?php echo $this->htmlEscape($_category->getName()) ?></h1>
-                        <? if($_category->getDescription()):?>
-                            <div class="line margin-bottom-15px"></div>
-                            <h3><?php echo $_category->getDescription() ?></h3>
-                        <?php endif;?>
-                    </div>
                 <?php endif;?>
+                <?php echo $_imgHtml ?>
+                <div class="header-content-title<?php if($_imgHtml): echo "-absolute"; endif?>">
+                    <h1 style="visibility: hidden"><?php echo $this->htmlEscape($_category->getName()) ?></h1>
+                    <? if($_category->getDescription()):?>
+                        <div class="line margin-bottom-15px"></div>
+                        <h3><?php echo $_category->getDescription() ?></h3>
+                    <?php endif;?>
+                </div>
                 <?php if($routeName == 'checkout' && $controller == 'cart'){ ?>
 	                <div class="header-content-title title-no-breadcrumbs"><h1><?php echo $this->__('Shopping Cart') ?></h1></div>
 	            <?php  } ?>

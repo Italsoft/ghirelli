@@ -111,6 +111,9 @@ class Fiver_Megamenu_Block_Mainmenu_Menu extends Mage_Catalog_Block_Navigation
             $html[] = '</a>';
         }
         else {
+            $tmp = $this->getLinkUrl($category->getUrlKey());
+            $tmp = $this->getUrl();
+            $tmp = $this->getTargetPath($category->getUrlKey());
 
             $html[] = '<a href="' . $this->getCategoryUrl($category) . '"' . $linkClass . '>';
             $labelCategory = $this->_getCategoryLabelHtml($catdetail, $level);
