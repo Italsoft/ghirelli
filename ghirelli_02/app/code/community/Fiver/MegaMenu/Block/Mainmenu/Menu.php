@@ -112,8 +112,8 @@ class Fiver_Megamenu_Block_Mainmenu_Menu extends Mage_Catalog_Block_Navigation
         }
         else {
             /* sto cercando un reindirizzamanto ad un sito esterno.
-               in questi casi, quello che inizialmente era il path richiesto,
-               nell'url rewrite diventa l'id del path. allora devo usare prima
+               in questi casi, quello che inizialmente era il path richiesto (request_path),
+               nell'url rewrite diventa l'id del path (id_path). allora devo usare prima
                la funzione che mi restituisce il request_path della categoria,
                e poi ricercare dentro l'oggetto url_rewrite utilizzando la stringa
                ottenuta come se fosse l'id_path (ed in effetti lo è nella redirezione)
