@@ -111,11 +111,29 @@ class Fiver_Megamenu_Block_Mainmenu_Menu extends Mage_Catalog_Block_Navigation
             $html[] = '</a>';
         }
         else {
-            $tmp = $this->getLinkUrl($category->getUrlKey());
-            $tmp = $this->getUrl();
-            $tmp = $this->getTargetPath($category->getUrlKey());
+            /* sto cercando un reindirizzamanto ad un sito esterno.
+               in questi casi, quello che inizialmente era il path richiesto (request_path),
+               nell'url rewrite diventa l'id del path (id_path). allora devo usare prima
+               la funzione che mi restituisce il request_path della categoria,
+               e poi ricercare dentro l'oggetto url_rewrite utilizzando la stringa
+               ottenuta come se fosse l'id_path (ed in effetti lo è nella redirezione)
+               in questo modo il target_path resituito è effettivamente l'url di destinazione
+            */
+            $path = $category->getRequestPath();
+            $rewrite = Mage::getModel('core/url_rewrite')->loadByIdPath($path);
+            $targeturl = $rewrite->getTargetPath();
+            if($targeturl){
+                if(strtolower(substr($targeturl,0,4))==='http') {
+                    $html[] = '<a href="' . $this->getCategoryUrl($category) . '"' . $linkClass . " target='_blank'" . '>';
+                }
+                else{
+                    $html[] = '<a href="' . $this->getCategoryUrl($category) . '"' . $linkClass . '>';
+                }
+            }
+            else{
+                $html[] = '<a href="' . $this->getCategoryUrl($category) . '"' . $linkClass . '>';
+            }
 
-            $html[] = '<a href="' . $this->getCategoryUrl($category) . '"' . $linkClass . '>';
             $labelCategory = $this->_getCategoryLabelHtml($catdetail, $level);
             if ($level == 1) {
                 $html[] = '<span class="title_group">' . $this->escapeHtml($category->getName()) . $labelCategory . '</span>';
