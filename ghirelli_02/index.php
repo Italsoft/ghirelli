@@ -136,9 +136,9 @@ if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
 
 /* Auto redirect to language store view if request is for root */
 // Versione per debug
-if (substr($_SERVER['REQUEST_URI'],0,23) === '/?XDEBUG_SESSION_START=') {
+//if (substr($_SERVER['REQUEST_URI'],0,23) === '/?XDEBUG_SESSION_START=') {
 // Versione runtime
-//if ($_SERVER['REQUEST_URI'] === '/') {
+if ($_SERVER['REQUEST_URI'] === '/') {
     // identifica lo store dal linguaggio del browser
     //header('Location: '.getStoreForLanguage()->getBaseUrl());
 
