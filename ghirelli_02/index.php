@@ -61,31 +61,35 @@ function getStoreForLanguage()
     return Mage::app()->getStore();
 }
 
-/* Determina il negozio corretto in base all'IP dal quale proviane la richiesta */
+/* Determina il negozio corretto in base all'IP dal quale proviene la richiesta */
 function getStoreForIP()
 {
+    // get list of stores and use the store code for the key
+    // ATTENZIONE. Questa va chiamata prima di tutto,
+    // perché provvede anche a inizializzare una variabile che serve
+    // nella chiamata getSingleton.
+    // in caso contrario la getSingleton fallisce.
+    $stores = Mage::app()->getStores(false, true);
+
     $geoip = Mage::getSingleton('geoip/country');
+    //$ip = "64.233.174.243";
+    //$ip = "83.224.40.221";
+    //$country = $geoip->getCountryByIp($ip);
     $country = $geoip->getCountry();
-    Mage::log($country);
-//    if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
-//        foreach (explode(",", strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'])) as $accept) {
-//            if (preg_match("!([a-z-]+)(;q=([0-9.]+))?!", trim($accept), $found)) {
-//                $langs[] = $found[1];
-//                $quality[] = (isset($found[3]) ? (float) $found[3] : 1.0);
-//            }
-//        }
-//        // Order the codes by quality
-//        array_multisort($quality, SORT_NUMERIC, SORT_DESC, $langs);
-//
-//        // get list of stores and use the store code for the key
-//        $stores = Mage::app()->getStores(false, true);
-//
-//        // iterate through languages found in the accept-language header
-//        foreach ($langs as $lang) {
-//            $lang = substr($lang,0,2);
-//            if (isset($stores[$lang]) && $stores[$lang]->getIsActive()) return $stores[$lang];
-//        }
-//    }
+    //Mage::log($country);
+
+    // se trova implementato lo store relativo a country....
+    $lang = substr($country,0,2);
+    if (isset($stores[$lang]) && $stores[$lang]->getIsActive()){
+        return $stores[$lang];
+    }
+    else{
+        $lang = strtolower($lang);
+        if (isset($stores[$lang]) && $stores[$lang]->getIsActive()){
+            return $stores[$lang];
+        }
+    }
+    // ...altrimenti ritorna lo store di default
     return Mage::app()->getStore();
 }
 
@@ -131,12 +135,19 @@ if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
 }
 
 /* Auto redirect to language store view if request is for root */
+// Versione per debug
+if (substr($_SERVER['REQUEST_URI'],0,23) === '/?XDEBUG_SESSION_START=') {
+// Versione runtime
 //if ($_SERVER['REQUEST_URI'] === '/') {
-//    header('Location: '.getStoreForLanguage()->getBaseUrl());
-//    Mage::log("sono qui");
-//    //getStoreForIP();
-//    exit;
-//}
+    // identifica lo store dal linguaggio del browser
+    //header('Location: '.getStoreForLanguage()->getBaseUrl());
+
+    //Mage::log("in auto redirect");
+
+    // identifica lo store dall'ip dal quale proviene laa richiesta
+    header('Location: '.getStoreForIP()->getBaseUrl());
+    exit;
+}
 
 #ini_set('display_errors', 1);
 
