@@ -73,14 +73,11 @@ if ($block_top_bar_left || $block_top_bar_center || $block_top_bar_right):
         <div>
             <h1>
                 <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" >
-                    <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>";/>
+                    <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/>
                 </a>
             </h1>
         </div>
     </div>
-</div>
-<div class ="bannerfooter">
-<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('bannerfooter')->toHtml();?>
 </div>
 
 <div class="main-navigation-container">
