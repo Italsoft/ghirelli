@@ -61,6 +61,24 @@ function getStoreForLanguage()
     return Mage::app()->getStore();
 }
 
+/* Ritorna la country in base all'ip dal quale proviene la richiesta */
+function getCountryForIP()
+{
+    // ATTENZIONE. Questa va chiamata prima di tutto,
+    // perché provvede anche a inizializzare una variabile che serve
+    // nella chiamata getSingleton.
+    // in caso contrario la getSingleton fallisce.
+    $stores = Mage::app()->getStores(false, true);
+
+    $geoip = Mage::getSingleton('geoip/country');
+    //$ip = "64.233.174.243"; // americano
+    //$ip = "83.224.40.221";  // italiano
+    //$country = $geoip->getCountryByIp($ip);
+    $country = $geoip->getCountry();
+    //Mage::log($country);
+    return $country;
+}
+
 /* Determina il negozio corretto in base all'IP dal quale proviene la richiesta */
 function getStoreForIP()
 {
@@ -72,8 +90,8 @@ function getStoreForIP()
     $stores = Mage::app()->getStores(false, true);
 
     $geoip = Mage::getSingleton('geoip/country');
-    //$ip = "64.233.174.243";
-    //$ip = "83.224.40.221";
+    //$ip = "64.233.174.243"; // americano
+    //$ip = "83.224.40.221";    // italiano
     //$country = $geoip->getCountryByIp($ip);
     $country = $geoip->getCountry();
     //Mage::log($country);
@@ -144,8 +162,20 @@ if ($_SERVER['REQUEST_URI'] === '/') {
 
     //Mage::log("in auto redirect");
 
-    // identifica lo store dall'ip dal quale proviene laa richiesta
-    header('Location: '.getStoreForIP()->getBaseUrl());
+    /* identifica lo store dall'ip dal quale proviene la richiesta
+       Se la richiesta avviene dagli stati uniti, allora esegue
+       una redirezione al sito americano (cablata).
+       il sito americano non deve essere dichiarato come un negozio in magento
+       questo è una schifezza, perché viola il meccanismo degli store di magento
+       è stato fatto così solo per soddisfare a una specifica esigenza del cliente.
+    */
+    $country = getCountryForIP();
+    if(substr_compare($country,'us',0,2,true) === 0) {
+        header('Location: http://www.ghirelli.com/us');
+    }
+    else {
+        header('Location: ' . getStoreForIP()->getBaseUrl());
+    }
     exit;
 }
 
